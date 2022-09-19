@@ -23,3 +23,18 @@ main section {
   display: flex;
   flex-direction: column;
 }
+
+.header {
+  width: 100%;
+  background: #2298FF;
+  background-image: url('../images/Circuit Primary.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 8px #0004;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
