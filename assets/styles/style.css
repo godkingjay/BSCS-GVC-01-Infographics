@@ -123,11 +123,8 @@ main section {
       "c";
   position: relative;
   transition: all 0.2s ease-in-out;
-}
-
-.header-topic > img:hover,
-.header-title:hover {
-  transform: scale(1.05);
+  place-items: center;
+  column-gap: 16px;
 }
 
 .header-title:before {
@@ -152,7 +149,6 @@ main section {
   background: var(--clr-3-a);
   text-align: center;
   color: var(--text-clr);
-  padding: 4px;
   font-weight: bold;
   box-shadow: -4px 4px var(--clr-3-c),
               -8px 8px var(--lines-1);
@@ -160,17 +156,18 @@ main section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-block: 4px;
+  width: 100%;
 }
 
 .header-color-ctn {
   height: 48px;
   display: flex;
   padding: 8px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
 }
 
 .colors-theme > * {
@@ -199,4 +196,89 @@ main section {
 
 .colors-theme > *:nth-child(5){
   background: var(--clr-1-a);
+}
+
+.header-topic > img,
+.colors-theme > *,
+.header-title > h1,
+.header-title > p {
+  transition: all .2s ease-in-out;
+}
+
+.header-topic > img:hover,
+.header-title > h1:hover,
+.header-title > p:hover {
+  transform: scale(1.05);
+}
+
+.colors-theme > *:hover {
+  transform: scale(1.1);
+  animation: shadow-around 1s linear infinite;
+}
+
+@keyframes shadow-around {
+  0% {
+    box-shadow: -4px 4px var(--lines-1);
+  }
+  6.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  12.5% {
+    box-shadow: 4px -4px var(--lines-1);
+  }
+  18.75% {
+    box-shadow: 0 -6px var(--lines-1);
+  }
+  25% {
+    box-shadow: -4px -4px var(--lines-1);
+  }
+  31.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  37.5% {
+    box-shadow: 4px 4px var(--lines-1);
+  }
+  43.75% {
+    box-shadow: 0 6px var(--lines-1);
+  }
+  50% {
+    box-shadow: -4px 4px var(--lines-1);
+  }
+  56.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  62.5%{
+    box-shadow: 4px -4px var(--lines-1);
+  }
+  68.75% {
+    box-shadow: 6px 0 var(--lines-1);
+  }
+  75% {
+    box-shadow: 4px 4px var(--lines-1);
+  }
+  81.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  87.5% {
+    box-shadow: -4px -4px var(--lines-1);
+  }
+  93.75% {
+    box-shadow: -6px 0 var(--lines-1);
+  }
+  100% {
+    box-shadow: -4px 4px var(--lines-1);
+  }
+}
+
+@media (min-width: 698px) {
+  .header-title {
+    grid-template-areas: 
+        "t1 t2"
+        "t1 c";
+  }
+
+  .header-title > h1 {
+    font-size: 36px;
+    max-width: 224px;
+  }
 }
