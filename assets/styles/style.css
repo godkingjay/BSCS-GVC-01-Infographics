@@ -73,10 +73,11 @@ main section {
   width: 100%;
   background: var(--header-bg-clr);
   background-image: url('../images/Circuit Primary.svg');
-  background-position: center;
-  background-size: cover;
+  background-position: right center;
+  background-size: contain;
   background-repeat: no-repeat;
-  box-shadow: 0 0 0 2px var(--lines-1);
+  box-shadow: 0 0 0 4px var(--lines-1),
+              0 4px 8px var(--lines-1);
   background-blend-mode: luminosity;
 }
 
@@ -115,9 +116,11 @@ main section {
   flex-direction: column;
   gap: 4px;
   padding-left: 36px;
+  grid-auto-rows: 1fr;
   grid-template-areas: 
-      "t1 c"
-      "t2 t2";
+      "t1"
+      "t2"
+      "c";
   position: relative;
   transition: all 0.2s ease-in-out;
 }
@@ -154,4 +157,46 @@ main section {
   box-shadow: -4px 4px var(--clr-3-c),
               -8px 8px var(--lines-1);
   padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 4px;
+}
+
+.header-color-ctn {
+  height: 48px;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.colors-theme > * {
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: -4px 4px var(--lines-1);
+}
+
+.colors-theme > *:nth-child(1){
+  background: var(--clr-5-a);
+}
+
+.colors-theme > *:nth-child(2){
+  background: var(--clr-4-a);
+}
+
+.colors-theme > *:nth-child(3){
+  background: var(--clr-3-a);
+}
+
+.colors-theme > *:nth-child(4){
+  background: var(--clr-2-a);
+}
+
+.colors-theme > *:nth-child(5){
+  background: var(--clr-1-a);
 }
