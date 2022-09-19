@@ -116,7 +116,6 @@ main section {
   flex-direction: column;
   gap: 4px;
   padding-left: 36px;
-  grid-auto-rows: 1fr;
   grid-template-areas: 
       "t1"
       "t2"
@@ -140,9 +139,10 @@ main section {
 .header-title > h1 {
   color: var(--text-clr);
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 36px;
   padding-block: 4px;
   text-shadow: -3px 2px var(--lines-1);
+  position: relative;
 }
 
 .header-title > p {
@@ -152,7 +152,7 @@ main section {
   font-weight: bold;
   box-shadow: -4px 4px var(--clr-3-c),
               -8px 8px var(--lines-1);
-  padding: 4px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,7 +160,7 @@ main section {
 }
 
 .header-color-ctn {
-  height: 48px;
+  height: 100%;
   display: flex;
   padding: 8px;
   width: 100%;
@@ -270,7 +270,7 @@ main section {
   }
 }
 
-@media (min-width: 698px) {
+@media (min-width: 768px) {
   .header-title {
     grid-template-areas: 
         "t1 t2"
@@ -278,7 +278,20 @@ main section {
   }
 
   .header-title > h1 {
-    font-size: 36px;
-    max-width: 224px;
+    font-size: 48px;
+    max-width: 304px;
+  }
+
+  .header-title > h1:after {
+    position: absolute;
+    border-right: 4px dashed transparent;
+    height: 100%;
+    background: white;
+    right: 0;
+    top: 0;
+  }
+
+  .header-title > p {
+    font-size: 24px;
   }
 }
