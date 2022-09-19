@@ -42,7 +42,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: solid 1px #0002;
+  /* outline: solid 1px #0002; */
 }
 
 body {
@@ -173,6 +173,8 @@ main section {
 .colors-theme > * {
   height: 100%;
   aspect-ratio: 1;
+  max-height: 39.2px;
+  max-width: 39.2px;
   border-radius: 50%;
   margin: auto;
   box-shadow: -4px 4px var(--lines-1);
