@@ -6,3 +6,66 @@
         "c c";
   }
 }
+
+@media (max-width: 732px) {
+  .header-content {
+    grid-template-areas: 
+        "i"
+        "t"
+        "p"
+        "c";
+  }
+
+  .header-content > h1 {
+    border-top: none;
+    border-right: none;
+    border-bottom: 4px solid var(--white-1);
+    box-shadow: 0 3px var(--white-5),
+                0 6px var(--lines-1);
+  }
+
+  .header-content > h1:hover {
+    background: linear-gradient(180deg, transparent, #fff4);
+  }
+
+  .header-content > * {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 480px) {
+  .color-theme {
+    display: grid;
+    min-width: 100%;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "c1 c1 c2 c2 c3 c3"
+        "c4 c4 c4 c5 c5 c5";
+    place-items: center;
+  }
+
+  .color-theme > span {
+    margin: auto;
+  }
+
+  .color-theme > span:nth-child(1) {
+    grid-area: c1;
+  }
+  
+  .color-theme > span:nth-child(2) {
+    grid-area: c2;
+  }
+  
+  .color-theme > span:nth-child(3) {
+    grid-area: c3;
+  }
+  
+  .color-theme > span:nth-child(4) {
+    grid-area: c4;
+  }
+  
+  .color-theme > span:nth-child(5) {
+    grid-area: c5;
+  }
+}

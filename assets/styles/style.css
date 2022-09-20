@@ -42,7 +42,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: solid 1px #0002; */
+  outline: solid 1px #0002;
 }
 
 body {
@@ -72,8 +72,9 @@ main section {
 }
 
 .header {
-  background: var(--clr-1-a);
+  background: var(--clr-2-b);
   padding: 32px;
+  min-height: 800px;
 }
 
 .header-backgrounds,
@@ -187,7 +188,7 @@ main section {
 }
 
 .header-content > h1:hover {
-  background: linear-gradient(0deg, transparent, #fff8);
+  background: #fff2;
 }
 
 .header-content > p {
@@ -224,7 +225,9 @@ main section {
 }
 
 .color-theme > span {
-  height: 48px;
+  width: 48px;
+  max-width: 48px;
+  flex: 1;
   aspect-ratio: 1;
   border-radius: 50%;
   box-shadow: -4px 4px var(--lines-1);
