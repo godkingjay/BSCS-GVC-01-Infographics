@@ -1,3 +1,29 @@
+@keyframes reverse-gradient {
+  0% {
+    background: linear-gradient(90deg,  var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
+                                        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
+                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
+                                        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
+                                        var(--clr-5-a) 100%);
+  }
+  
+  50% {
+    background: linear-gradient(90deg,  var(--clr-5-a) 16%, #0008 16%, #0008 21%, var(--clr-4-a) 21%,
+                                        var(--clr-4-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
+                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-2-a) 63%,
+                                        var(--clr-2-a) 79%, #0008 79%, #0008 84%, var(--clr-1-a) 84%,
+                                        var(--clr-1-a) 100%);
+  }
+
+  100% {
+    background: linear-gradient(90deg,  var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
+                                        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
+                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
+                                        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
+                                        var(--clr-5-a) 100%);
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

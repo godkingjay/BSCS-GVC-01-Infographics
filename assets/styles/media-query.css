@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 480px) {
-  .color-theme {
+  /* .color-theme {
     display: grid;
     min-width: 100%;
     grid-auto-rows: 1fr;
@@ -67,5 +67,69 @@
   
   .color-theme > span:nth-child(5) {
     grid-area: c5;
+  } */
+
+  .color-theme > span {
+    width: 36px;
+  }
+}
+
+@media (max-width: 448px) {
+  .header-logo {
+    height: 192px !important;
+  }
+
+  .header-logo > span:nth-of-type(1) {
+    height: 160px;
+  }
+  
+  .header-logo > span:nth-of-type(2) {
+    height: 192px;
+    animation: rotate-reverse 1s linear infinite;
+  }
+  
+  .header-logo > span:nth-of-type(3) {
+    height: 224px;
+  }
+
+  .header-content > h1 {
+    font-size: 44px;
+  }
+
+  .header-content > p {
+    font-size: 30px;
+  }
+
+  .color-theme {
+    margin-top: 16px;
+    height: 48px;
+    border-radius: 24px;
+    width: 100%;
+    /* background: linear-gradient(90deg, var(--clr-1-a) 20%, var(--clr-2-a) 40%, var(--clr-3-a) 60%, var(--clr-4-a) 80%, var(--clr-5-a) 100%); */
+    background: linear-gradient(90deg,  var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
+                                        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
+                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
+                                        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
+                                        var(--clr-5-a) 100%);
+    animation: shadow-around 1s linear infinite, reverse-gradient 2s linear infinite;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .color-theme:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-theme > span {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .header-content > h1 {
+    font-size: 36px;
+  }
+
+  .header-content > p {
+    font-size: 24px;
   }
 }
