@@ -17,6 +17,7 @@
   }
 
   .header-content > h1 {
+    margin-bottom: 8px;
     border-top: none;
     border-right: none;
     border-bottom: 4px solid var(--white-1);
@@ -29,7 +30,7 @@
   }
 
   .header-content > * {
-    max-width: 576px;
+    max-width: 512px;
   }
 }
 
