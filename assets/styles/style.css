@@ -42,7 +42,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: solid 1px #0002;
+  /* outline: solid 1px #0002; */
 }
 
 body {
@@ -279,4 +279,19 @@ main section {
 .intro-content {
   z-index: 1;
   display: grid;
+  min-height: 100%;
+  min-width: 100%;
+  place-items: center;
+  grid-template-areas:
+      "a r";
+}
+
+.ai-about-ctn {
+  grid-area: a;
+  background: var(--clr-1-b);
+}
+
+.ai-role-ctn {
+  grid-area: r;
+  background: var(--clr-3-b);
 }
