@@ -8,6 +8,8 @@ Resources:
 
 [Animated Shape Title](https://bgjar.com/)
 
+[Circles.svg](https://bgjar.com/)
+
 [Circular Primary.svg](https://bgjar.com/)
 
 [github-logo.png]()
