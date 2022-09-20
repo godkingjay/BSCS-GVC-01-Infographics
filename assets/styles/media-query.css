@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .header-content {
+    grid-template-areas: 
+        "i t"
+        "p p"
+        "c c";
+  }
+}

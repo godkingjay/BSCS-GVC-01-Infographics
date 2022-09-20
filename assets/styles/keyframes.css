@@ -1,0 +1,71 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shadow-around {
+  0% {
+    box-shadow: -4px 4px var(--lines-1);
+  }
+  6.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  12.5% {
+    box-shadow: 4px -4px var(--lines-1);
+  }
+  18.75% {
+    box-shadow: 0 -6px var(--lines-1);
+  }
+  25% {
+    box-shadow: -4px -4px var(--lines-1);
+  }
+  31.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  37.5% {
+    box-shadow: 4px 4px var(--lines-1);
+  }
+  43.75% {
+    box-shadow: 0 6px var(--lines-1);
+  }
+  50% {
+    box-shadow: -4px 4px var(--lines-1);
+  }
+  56.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  62.5%{
+    box-shadow: 4px -4px var(--lines-1);
+  }
+  68.75% {
+    box-shadow: 6px 0 var(--lines-1);
+  }
+  75% {
+    box-shadow: 4px 4px var(--lines-1);
+  }
+  81.25% {
+    box-shadow: 0 0 var(--lines-1);
+  }
+  87.5% {
+    box-shadow: -4px -4px var(--lines-1);
+  }
+  93.75% {
+    box-shadow: -6px 0 var(--lines-1);
+  }
+  100% {
+    box-shadow: -4px 4px var(--lines-1);
+  }
+}
