@@ -44,7 +44,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: solid 1px #0002;  
+  /* outline: solid 1px #0002; */
 }
 
 body {
