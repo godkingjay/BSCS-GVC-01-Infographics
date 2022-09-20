@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="540" preserveAspectRatio="none" viewBox="0 0 1440 540"><g mask="url(&quot;#SvgjsMask1025&quot;)" fill="none"><path d="M 0,53 C 96,62.8 288,101.2 480,102 C 672,102.8 768,50.6 960,57 C 1152,63.4 1344,118.6 1440,134L1440 540L0 540z" fill="rgba(255, 255, 255, 0)"></path><path d="M 0,263 C 96,247.4 288,195.6 480,185 C 672,174.4 768,210.2 960,210 C 1152,209.8 1344,189.2 1440,184L1440 540L0 540z" fill="rgba(255, 255, 255, 0)"></path><path d="M 0,315 C 57.6,323 172.8,354.6 288,355 C 403.2,355.4 460.8,312 576,317 C 691.2,322 748.8,386 864,380 C 979.2,374 1036.8,282.6 1152,287 C 1267.2,291.4 1382.4,379 1440,402L1440 540L0 540z" fill="rgba(62, 165, 255, 1)"></path><path d="M 0,446 C 48,458.4 144,505.8 240,508 C 336,510.2 384,452.6 480,457 C 576,461.4 624,534.2 720,530 C 816,525.8 864,444.4 960,436 C 1056,427.6 1104,489 1200,488 C 1296,487 1392,442.4 1440,431L1440 540L0 540z" fill="rgba(36, 153, 255, 1)"></path></g><defs><mask id="SvgjsMask1025"><rect width="1440" height="540" fill="#ffffff"></rect></mask></defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="540" preserveAspectRatio="none" viewBox="0 0 1440 540">
+
+  <filter id="bottomWave">
+    <feDropShadow
+      dx="0"
+      dy="-2"
+      stdDeviation="2"
+      flood-color="#444"
+      flood-opacity="30%"
+    />
+  </filter>
+
+  <filter id="topWave">
+    <feDropShadow
+      dx="0"
+      dy="-2"
+      stdDeviation="2"
+      flood-color="#444"
+      flood-opacity="30%"
+    />
+  </filter>
+
+  <g mask="url(&quot;#SvgjsMask1025&quot;)" fill="none">
+    <path d="M 0,53 C 96,62.8 288,101.2 480,102 C 672,102.8 768,50.6 960,57 C 1152,63.4 1344,118.6 1440,134L1440 540L0 540z" fill="rgba(255, 255, 255, 0)"></path>
+    <path d="M 0,263 C 96,247.4 288,195.6 480,185 C 672,174.4 768,210.2 960,210 C 1152,209.8 1344,189.2 1440,184L1440 540L0 540z" fill="rgba(255, 255, 255, 0)"></path>
+    <g filter="url(#topWave)">
+      <path d="M 0,315 C 57.6,323 172.8,354.6 288,355 C 403.2,355.4 460.8,312 576,317 C 691.2,322 748.8,386 864,380 C 979.2,374 1036.8,282.6 1152,287 C 1267.2,291.4 1382.4,379 1440,402L1440 540L0 540z" fill="rgba(62, 165, 255, 1)"></path>
+    </g>
+    <g filter="url(#bottomWave)">
+      <path d="M 0,446 C 48,458.4 144,505.8 240,508 C 336,510.2 384,452.6 480,457 C 576,461.4 624,534.2 720,530 C 816,525.8 864,444.4 960,436 C 1056,427.6 1104,489 1200,488 C 1296,487 1392,442.4 1440,431L1440 540L0 540z" fill="rgba(36, 153, 255, 1)"></path>
+    </g>
+  </g>
+  <defs>
+    <mask id="SvgjsMask1025">
+      <rect width="1440" height="540" fill="#ffffff"></rect>
+    </mask>
+  </defs>
+</svg>
