@@ -12,6 +12,8 @@ Resources:
 
 [Circular Primary.svg](https://bgjar.com/)
 
+[Cloudy.svg](https://bgjar.com/)
+
 [github-logo.png]()
 
 [global-illustration.png](https://www.pngmart.com/image/120813)
