@@ -9,9 +9,9 @@
 }
 
 :root {
-  --clr-1-a: hsl(242, 100%, 75%);
-  --clr-1-b: hsl(242, 100%, 82%);
-  --clr-1-c: hsl(242, 100%, 65%);
+  --clr-1-a: #8480ff;
+  --clr-1-b: #a6a3ff;
+  --clr-1-c: #524dff;
   --clr-2-a: hsl(208, 100%, 57%);
   --clr-2-b: hsl(208, 100%, 70%);
   --clr-2-c: hsl(208, 100%, 47%);
@@ -24,6 +24,8 @@
   --clr-5-a: hsl(32, 100%, 50%);
   --clr-5-b: hsl(32, 100%, 65%);
   --clr-5-c: hsl(32, 100%, 40%);
+
+  --dark-1: #001122;
 
   --white-1: #ffffff;
   --white-2: #e0e0e0;
@@ -42,7 +44,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: solid 1px #0002;   */
+  outline: solid 1px #0002;  
 }
 
 body {
@@ -82,7 +84,8 @@ section {
 
 .header-backgrounds,
 .intro-backgrounds,
-.industry-backgrounds {
+.industry-backgrounds,
+.others-backgrounds {
   z-index: 0;
   position: absolute;
   height: 100%;
@@ -91,7 +94,8 @@ section {
 
 .header-backgrounds > *,
 .intro-backgrounds > *,
-.industry-backgrounds > *{
+.industry-backgrounds > *,
+.others-backgrounds > * {
   position: absolute;
 }
 
@@ -329,4 +333,32 @@ section {
 
 .industries {
   background: #f0f0f0;
+}
+
+.industry-wave {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/layered-waves-haikei.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.others {
+  background: var(--clr-1-a);
+}
+
+.others-bg-end {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/layered-waves-haikei-2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.footer {
+  min-height: max-content;
+  height: max-content;
+  background: var(--dark-1);
 }

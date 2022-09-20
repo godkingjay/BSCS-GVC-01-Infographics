@@ -18,4 +18,8 @@ Resources:
 
 [global-illustration.png](https://www.pngmart.com/image/120813)
 
+[layered-waves-haikei.svg](https://app.haikei.app/)
+
+[layered-waves-haikei-2.svg](https://app.haikei.app/)
+
 [Wave.png](https://bgjar.com/wave)
