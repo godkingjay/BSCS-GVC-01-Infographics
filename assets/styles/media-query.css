@@ -32,7 +32,7 @@
 
 @media (max-width: 864px) {
   .intro-content {
-    grid-gap: 32px;
+    grid-gap: 64px;
   }
 
   .intro-about-ctn,
@@ -40,6 +40,10 @@
     grid-template-areas:
       "i"
       "c";
+  }
+
+  .intro-card-content > h2 {
+    margin-inline: auto;
   }
 }
 

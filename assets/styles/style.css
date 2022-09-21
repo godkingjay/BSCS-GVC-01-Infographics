@@ -184,6 +184,7 @@ section {
 .header-logo > img {
   z-index: 1;
   height: 100%;
+  filter: drop-shadow(-8px 8px var(--lines-1));
 }
 
 .header-logo > span {
@@ -192,6 +193,7 @@ section {
   aspect-ratio: 1;
   border-radius: 50%;
   opacity: 80%;
+  filter: drop-shadow(-4px 4px var(--lines-1));
 }
 
 .header-logo > span:nth-of-type(1) {
@@ -258,6 +260,7 @@ section {
               -8px 8px var(--lines-1),
               inset -4px 4px 4px #fff4,
               inset 2px -2px 2px #0002;
+  border-radius: 8px;
 }
 
 .header-content > .color-theme {
@@ -281,6 +284,7 @@ section {
   flex: 1;
   aspect-ratio: 1;
   border-radius: 50%;
+  filter: drop-shadow(-2px 2px var(--lines-1));
   box-shadow: -4px 4px var(--lines-1);
   animation: shadow-around 2s linear infinite;
 }
