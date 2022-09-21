@@ -1,138 +1,157 @@
 @keyframes about-title-shadow {
   0% {
     box-shadow: inset -4px 4px 4px #fff2,
-              inset 2px -2px 4px #0002,
-              -4px 4px var(--clr-2-c),
-              -8px 8px var(--lines-1);
+      inset 2px -2px 4px #0002,
+      -4px 4px var(--clr-2-c),
+      -8px 8px var(--lines-1);
   }
+
   25% {
     box-shadow: inset -4px 4px 4px #fff2,
-              inset 2px -2px 4px #0002,
-              -4px 4px var(--clr-2-c),
-              -8px 8px var(--lines-1);
+      inset 2px -2px 4px #0002,
+      -4px 4px var(--clr-2-c),
+      -8px 8px var(--lines-1);
   }
+
   50% {
     box-shadow: inset 4px 4px 4px #fff2,
-              inset -2px -2px 4px #0002,
-              4px 4px var(--clr-2-c),
-              8px 8px var(--lines-1);
+      inset -2px -2px 4px #0002,
+      4px 4px var(--clr-2-c),
+      8px 8px var(--lines-1);
   }
+
   75% {
     box-shadow: inset 4px 4px 4px #fff2,
-              inset -2px -2px 4px #0002,
-              4px 4px var(--clr-2-c),
-              8px 8px var(--lines-1);
+      inset -2px -2px 4px #0002,
+      4px 4px var(--clr-2-c),
+      8px 8px var(--lines-1);
   }
+
   100% {
     box-shadow: inset -4px 4px 4px #fff2,
-              inset 2px -2px 4px #0002,
-              -4px 4px var(--clr-2-c),
-              -8px 8px var(--lines-1);
+      inset 2px -2px 4px #0002,
+      -4px 4px var(--clr-2-c),
+      -8px 8px var(--lines-1);
   }
 }
 
 @keyframes about-text-shadow-stretch {
   0% {
     box-shadow: -16px 16px #66b8ff80,
-                -32px 32px #66b8ff40;
+      -32px 32px #66b8ff40;
   }
+
   25% {
     box-shadow: -16px 16px #66b8ff80,
-                -32px 32px #66b8ff40;
+      -32px 32px #66b8ff40;
   }
+
   50% {
     box-shadow: -24px 24px #66b8ff80,
-                -48px 48px #66b8ff40;
+      -48px 48px #66b8ff40;
   }
+
   75% {
     box-shadow: -24px 24px #66b8ff80,
-                -48px 48px #66b8ff40;
+      -48px 48px #66b8ff40;
   }
+
   100% {
     box-shadow: -16px 16px #66b8ff80,
-                -32px 32px #66b8ff40;
+      -32px 32px #66b8ff40;
   }
 }
 
 @keyframes role-text-shadow-stretch {
   0% {
     box-shadow: -16px 16px #2cd89640,
-                -32px 32px #2cd89620;
+      -32px 32px #2cd89620;
   }
+
   25% {
     box-shadow: -16px 16px #2cd89640,
-                -32px 32px #2cd89620;
+      -32px 32px #2cd89620;
   }
+
   50% {
     box-shadow: -24px 24px #2cd89640,
-                -48px 48px #2cd89620;
+      -48px 48px #2cd89620;
   }
+
   75% {
     box-shadow: -24px 24px #2cd89640,
-                -48px 48px #2cd89620;
+      -48px 48px #2cd89620;
   }
+
   100% {
     box-shadow: -16px 16px #2cd89640,
-                -32px 32px #2cd89620;
+      -32px 32px #2cd89620;
   }
 }
 
 @keyframes role-title-shadow {
   0% {
     box-shadow: inset -4px 4px 4px #fff2,
-              inset 2px -2px 4px #0002,
-              -4px 4px var(--clr-3-c),
-              -8px 8px var(--lines-1);
+      inset 2px -2px 4px #0002,
+      -4px 4px var(--clr-3-c),
+      -8px 8px var(--lines-1);
   }
+
   25% {
     box-shadow: inset -4px 4px 4px #fff2,
-              inset 2px -2px 4px #0002,
-              -4px 4px var(--clr-3-c),
-              -8px 8px var(--lines-1);
+      inset 2px -2px 4px #0002,
+      -4px 4px var(--clr-3-c),
+      -8px 8px var(--lines-1);
   }
+
   50% {
     box-shadow: inset 4px 4px 4px #fff2,
-              inset -2px -2px 4px #0002,
-              4px 4px var(--clr-3-c),
-              8px 8px var(--lines-1);
+      inset -2px -2px 4px #0002,
+      4px 4px var(--clr-3-c),
+      8px 8px var(--lines-1);
   }
+
   75% {
     box-shadow: inset 4px 4px 4px #fff2,
-              inset -2px -2px 4px #0002,
-              4px 4px var(--clr-3-c),
-              8px 8px var(--lines-1);
+      inset -2px -2px 4px #0002,
+      4px 4px var(--clr-3-c),
+      8px 8px var(--lines-1);
   }
+
   100% {
     box-shadow: inset -4px 4px 4px #fff2,
-              inset 2px -2px 4px #0002,
-              -4px 4px var(--clr-3-c),
-              -8px 8px var(--lines-1);
+      inset 2px -2px 4px #0002,
+      -4px 4px var(--clr-3-c),
+      -8px 8px var(--lines-1);
   }
 }
 
 @keyframes reverse-gradient {
   0% {
-    background: linear-gradient(90deg,  var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
-                                        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
-                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
-                                        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
-                                        var(--clr-5-a) 100%);
+    background: linear-gradient(90deg,
+        var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
+        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
+        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
+        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
+        var(--clr-5-a) 100%);
   }
-  
+
   50% {
-    background: linear-gradient(90deg,  var(--clr-5-a) 16%, #0008 16%, #0008 21%, var(--clr-4-a) 21%,
-                                        var(--clr-4-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
-                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-2-a) 63%,
-                                        var(--clr-2-a) 79%, #0008 79%, #0008 84%, var(--clr-1-a) 84%,
-                                        var(--clr-1-a) 100%);
+    background: linear-gradient(90deg,
+        var(--clr-5-a) 16%, #0008 16%, #0008 21%, var(--clr-4-a) 21%,
+        var(--clr-4-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
+        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-2-a) 63%,
+        var(--clr-2-a) 79%, #0008 79%, #0008 84%, var(--clr-1-a) 84%,
+        var(--clr-1-a) 100%);
   }
 
   100% {
-    background: linear-gradient(90deg,  var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
-                                        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
-                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
-                                        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
-                                        var(--clr-5-a) 100%);
+    background: linear-gradient(90deg,
+        var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
+        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
+        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
+        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
+        var(--clr-5-a) 100%);
   }
 }
 
@@ -140,6 +159,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -149,6 +169,7 @@
   0% {
     transform: rotate(360deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -158,52 +179,197 @@
   0% {
     box-shadow: -4px 4px var(--lines-1);
   }
+
   6.25% {
     box-shadow: 0 0 var(--lines-1);
   }
+
   12.5% {
     box-shadow: 4px -4px var(--lines-1);
   }
+
   18.75% {
     box-shadow: 0 -6px var(--lines-1);
   }
+
   25% {
     box-shadow: -4px -4px var(--lines-1);
   }
+
   31.25% {
     box-shadow: 0 0 var(--lines-1);
   }
+
   37.5% {
     box-shadow: 4px 4px var(--lines-1);
   }
+
   43.75% {
     box-shadow: 0 6px var(--lines-1);
   }
+
   50% {
     box-shadow: -4px 4px var(--lines-1);
   }
+
   56.25% {
     box-shadow: 0 0 var(--lines-1);
   }
-  62.5%{
+
+  62.5% {
     box-shadow: 4px -4px var(--lines-1);
   }
+
   68.75% {
     box-shadow: 6px 0 var(--lines-1);
   }
+
   75% {
     box-shadow: 4px 4px var(--lines-1);
   }
+
   81.25% {
     box-shadow: 0 0 var(--lines-1);
   }
+
   87.5% {
     box-shadow: -4px -4px var(--lines-1);
   }
+
   93.75% {
     box-shadow: -6px 0 var(--lines-1);
   }
+
   100% {
     box-shadow: -4px 4px var(--lines-1);
+  }
+}
+
+@keyframes circle-rotate-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-rotate-2 {
+  0% {
+    transform: rotate(60deg);
+  }
+
+  100% {
+    transform: rotate(420deg);
+  }
+}
+
+@keyframes circle-rotate-3 {
+  0% {
+    transform: rotate(120deg);
+  }
+
+  100% {
+    transform: rotate(480deg);
+  }
+}
+
+@keyframes circle-rotate-4 {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(540deg);
+  }
+}
+
+@keyframes circle-rotate-5 {
+  0% {
+    transform: rotate(240deg);
+  }
+
+  100% {
+    transform: rotate(600deg);
+  }
+}
+
+@keyframes circle-rotate-6 {
+  0% {
+    transform: rotate(300deg);
+  }
+
+  100% {
+    transform: rotate(660deg);
+  }
+}
+
+@keyframes circle-name-rotate-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes circle-name-rotate-2 {
+  0% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(-420deg);
+  }
+}
+
+@keyframes circle-name-rotate-3 {
+  0% {
+    transform: rotate(-120deg);
+  }
+  100% {
+    transform: rotate(-480deg);
+  }
+}
+
+@keyframes circle-name-rotate-4 {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-540deg);
+  }
+}
+
+@keyframes circle-name-rotate-5 {
+  0% {
+    transform: rotate(-240deg);
+  }
+  100% {
+    transform: rotate(-600deg);
+  }
+}
+
+@keyframes circle-name-rotate-6 {
+  0% {
+    transform: rotate(-300deg);
+  }
+  100% {
+    transform: rotate(-660deg);
+  }
+}
+
+@keyframes circle-cyclic-anim-1 {
+  0% {
+    scale: 1.0;
+  }
+  8.34% {
+    scale: 1.05;
+  }
+  16.67% {
+    scale: 1.0;
+  }
+  100% {
+    scale: 1.0;
   }
 }
