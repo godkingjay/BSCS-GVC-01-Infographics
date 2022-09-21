@@ -500,6 +500,23 @@ section {
   animation: role-title-shadow 2s linear infinite;
 }
 
+.intro-img-ctn,
+.intro-card-content > h2,
+.intro-card-content > p {
+  transition: all 0.4s ease-in-out;
+}
+
+.intro-img-ctn:hover{
+  scale: 1.05;
+  filter: drop-shadow(0 0 4px #fff4);
+}
+
+.intro-card-content > h2:hover,
+.intro-card-content > p:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px #fff8);
+}
+
 .industries {
   background: #f0f0f0;
 }
