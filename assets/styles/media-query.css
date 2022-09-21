@@ -5,6 +5,12 @@
         "p p"
         "c c";
   }
+
+  .intro-content {
+    grid-template-areas:
+        "a"
+        "r";
+  }
 }
 
 @media (max-width: 732px) {
