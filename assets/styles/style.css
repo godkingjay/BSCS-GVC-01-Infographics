@@ -625,7 +625,7 @@ section {
 }
 
 .industry-circle:hover {
-  scale: 1.05;
+  scale: 1.1;
   filter: drop-shadow(0 0 8px #0008);
 }
 
