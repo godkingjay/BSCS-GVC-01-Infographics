@@ -9,11 +9,11 @@
 }
 
 :root {
-  --clr-1-a: hsl(242, 100%, 75%);
+  --clr-1-a: #8480ff;
   --clr-1-b: #a6a3ff;
   --clr-1-c: #524dff;
   --clr-2-a: #2499ff;
-  --clr-2-b: hsl(208, 100%, 70%);
+  --clr-2-b: #66b8ff;
   --clr-2-c: #0080f0;
   --clr-3-a: hsl(157, 69%, 51%);
   --clr-3-b: hsl(157, 70%, 66%);
@@ -299,7 +299,7 @@ section {
 }
 
 .color-theme > *:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .color-theme > span:nth-child(1) {
@@ -333,7 +333,7 @@ section {
 
 .introduction {
   background: var(--clr-2-a);
-  padding-top: 64px;
+  padding-top: 32px;
   padding-bottom: 192px;
 }
 
@@ -356,7 +356,8 @@ section {
   grid-auto-rows: 1fr;
   grid-template-areas:
       "a r";
-  grid-gap: 64px;
+  column-gap: 32px;
+  row-gap: 64px;
 }
 
 .intro-about-ctn,
@@ -364,8 +365,8 @@ section {
   display: grid;
   transition: all 0.5s ease-in-out;
   position: relative;
-  grid-gap: 16px;
   transition-delay: 0.25s;
+  margin-bottom: auto;
 }
 
 .intro-about-ctn {
@@ -382,35 +383,64 @@ section {
 }
 
 .intro-img-ctn {
+  aspect-ratio: 1;
   width: 100%;
   top: 0;
-  filter: drop-shadow(-4px 4px var(--dark-1));
+  min-width: 256px;
+  max-width: 492px;
+  position: relative;
 }
 
-.intro-img-ctn > img {
+.intro-img-ctn > * {
+  position: absolute;
   width: 100%;
-  max-width: 384px;
+  aspect-ratio: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.intro-globe {
-  filter: hue-rotate(290deg) brightness(120%);
+.blob {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-blob-1 {
+  width: 90%;
+  background-image: url('../images/ai/blob-haikei(1).svg');
+}
+
+.about-blob-2 {
+  width: 85%;
+  background-image: url('../images/ai/blob-haikei(2).svg');
 }
 
 .intro-card-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 32px;
+  gap: 24px;
+  padding-inline: 32px;
 }
 
 .intro-card-content > h2 {
   display: flex;
   width: max-content;
-  padding: 16px;
+  padding-block: 8px;
+  padding-inline: 16px;
   border-radius: 4px;
   color: white;
   letter-spacing: 2px;
   text-shadow: -2px 2px var(--white-5);
+}
+
+.intro-card-content > p {
+  max-width: 496px;
+  font-size: 24px;
+  text-align: justify;
+  color: white;
+  background: #0001;
+  padding: 32px;
+  border-radius: 8px;
 }
 
 .intro-card-title-about {
@@ -419,6 +449,7 @@ section {
               inset 2px -2px 4px #0002,
               -4px 4px var(--clr-2-c),
               -8px 8px var(--lines-1);
+  animation: about-title-shadow 2s linear infinite;
 }
 
 .intro-card-title-role {
@@ -427,6 +458,7 @@ section {
               inset 2px -2px 4px #0002,
               -4px 4px var(--clr-3-c),
               -8px 8px var(--lines-1);
+  animation: role-title-shadow 2s linear infinite;
 }
 
 .industries {

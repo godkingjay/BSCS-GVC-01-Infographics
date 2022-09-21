@@ -14,6 +14,24 @@
     grid-template-areas:
         "c i";
   }
+
+  .intro-img-ctn {
+    min-width: 384px;
+    margin-inline: auto;
+  }
+
+  .intro-card-content > h2 {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 864px) {
+  .intro-about-ctn,
+  .intro-role-ctn {
+    grid-template-areas:
+      "i"
+      "c";
+  }
 }
 
 @media (max-width: 768px) {
@@ -52,18 +70,14 @@
   }
 }
 
-@media (max-width: 672px) {
-  .intro-about-ctn,
-  .intro-role-ctn {
-    grid-template-areas:
-      "i"
-      "c";
-  }
-}
-
 @media (max-width: 480px) {
   .color-theme > span {
     width: 36px;
+  }
+
+  .intro-img-ctn {
+    min-width: 0;
+    max-width: 356px;
   }
 }
 
@@ -103,6 +117,16 @@
 
   .color-theme > span {
     width: 48px;
+  }
+
+  .intro-card-content > h2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 0;
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -1,3 +1,69 @@
+@keyframes about-title-shadow {
+  0% {
+    box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 4px #0002,
+              -4px 4px var(--clr-2-c),
+              -8px 8px var(--lines-1);
+  }
+  25% {
+    box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 4px #0002,
+              -4px 4px var(--clr-2-c),
+              -8px 8px var(--lines-1);
+  }
+  50% {
+    box-shadow: inset 4px 4px 4px #fff2,
+              inset -2px -2px 4px #0002,
+              4px 4px var(--clr-2-c),
+              8px 8px var(--lines-1);
+  }
+  75% {
+    box-shadow: inset 4px 4px 4px #fff2,
+              inset -2px -2px 4px #0002,
+              4px 4px var(--clr-2-c),
+              8px 8px var(--lines-1);
+  }
+  100% {
+    box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 4px #0002,
+              -4px 4px var(--clr-2-c),
+              -8px 8px var(--lines-1);
+  }
+}
+
+@keyframes role-title-shadow {
+  0% {
+    box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 4px #0002,
+              -4px 4px var(--clr-3-c),
+              -8px 8px var(--lines-1);
+  }
+  25% {
+    box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 4px #0002,
+              -4px 4px var(--clr-3-c),
+              -8px 8px var(--lines-1);
+  }
+  50% {
+    box-shadow: inset 4px 4px 4px #fff2,
+              inset -2px -2px 4px #0002,
+              4px 4px var(--clr-3-c),
+              8px 8px var(--lines-1);
+  }
+  75% {
+    box-shadow: inset 4px 4px 4px #fff2,
+              inset -2px -2px 4px #0002,
+              4px 4px var(--clr-3-c),
+              8px 8px var(--lines-1);
+  }
+  100% {
+    box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 4px #0002,
+              -4px 4px var(--clr-3-c),
+              -8px 8px var(--lines-1);
+  }
+}
+
 @keyframes reverse-gradient {
   0% {
     background: linear-gradient(90deg,  var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
