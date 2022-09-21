@@ -430,6 +430,12 @@ section {
   background-image: url('../images/role/blob-haikei(2).svg');
 }
 
+.intro-role-ctn > .intro-img-ctn > img {
+  aspect-ratio: auto;
+  width: 80%;
+  transform: translate(-50%, -80%);
+  filter: brightness(80%) hue-rotate(20deg);
+}
 
 .intro-card-content {
   display: flex;
