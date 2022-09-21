@@ -1,15 +1,27 @@
+@media (max-width: 976px) {
+  .intro-content {
+    grid-template-areas:
+        "a"
+        "r";
+  }
+
+  .intro-about-ctn {
+    grid-template-areas:
+        "i c";
+  }
+
+  .intro-role-ctn {
+    grid-template-areas:
+        "c i";
+  }
+}
+
 @media (max-width: 768px) {
   .header-content {
     grid-template-areas: 
         "i t"
         "p p"
         "c c";
-  }
-
-  .intro-content {
-    grid-template-areas:
-        "a"
-        "r";
   }
 }
 
@@ -40,42 +52,16 @@
   }
 }
 
-@media (max-width: 480px) {
-  /* .color-theme {
-    display: grid;
-    min-width: 100%;
-    grid-auto-rows: 1fr;
-    grid-auto-columns: 1fr;
+@media (max-width: 672px) {
+  .intro-about-ctn,
+  .intro-role-ctn {
     grid-template-areas:
-        "c1 c1 c2 c2 c3 c3"
-        "c4 c4 c4 c5 c5 c5";
-    place-items: center;
+      "i"
+      "c";
   }
+}
 
-  .color-theme > span {
-    margin: auto;
-  }
-
-  .color-theme > span:nth-child(1) {
-    grid-area: c1;
-  }
-  
-  .color-theme > span:nth-child(2) {
-    grid-area: c2;
-  }
-  
-  .color-theme > span:nth-child(3) {
-    grid-area: c3;
-  }
-  
-  .color-theme > span:nth-child(4) {
-    grid-area: c4;
-  }
-  
-  .color-theme > span:nth-child(5) {
-    grid-area: c5;
-  } */
-
+@media (max-width: 480px) {
   .color-theme > span {
     width: 36px;
   }
@@ -108,26 +94,15 @@
   }
 
   .color-theme {
-    margin-top: 16px;
-    height: 48px;
-    border-radius: 24px;
-    width: 100%;
-    /* background: linear-gradient(90deg, var(--clr-1-a) 20%, var(--clr-2-a) 40%, var(--clr-3-a) 60%, var(--clr-4-a) 80%, var(--clr-5-a) 100%); */
-    background: linear-gradient(90deg,  var(--clr-1-a) 16%, #0008 16%, #0008 21%, var(--clr-2-a) 21%,
-                                        var(--clr-2-a) 37%, #0008 37%, #0008 42%, var(--clr-3-a) 42%,
-                                        var(--clr-3-a) 58%, #0008 58%, #0008 63%, var(--clr-4-a) 63%,
-                                        var(--clr-4-a) 79%, #0008 79%, #0008 84%, var(--clr-5-a) 84%,
-                                        var(--clr-5-a) 100%);
-    animation: shadow-around 1s linear infinite, reverse-gradient 2s linear infinite;
-    transition: all 0.2s ease-in-out;
+    display: grid;
+    grid-template-areas:
+        "c1 c1 c2 c2 c3 c3"
+        "c4 c4 c4 c5 c5 c5";
+    place-items: center;
   }
 
-  .color-theme:hover {
-    transform: scale(1.1);
-  }
-  
   .color-theme > span {
-    display: none;
+    width: 48px;
   }
 }
 
@@ -138,6 +113,20 @@
 
   .header-content > p {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 977px) {
+  .intro-about-ctn {
+    grid-template-areas:
+      "i"
+      "c";
+  }
+
+  .intro-role-ctn {
+    grid-template-areas:
+        "c"
+        "i";
   }
 }
 

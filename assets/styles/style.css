@@ -9,12 +9,12 @@
 }
 
 :root {
-  --clr-1-a: #8480ff;
+  --clr-1-a: hsl(242, 100%, 75%);
   --clr-1-b: #a6a3ff;
   --clr-1-c: #524dff;
-  --clr-2-a: hsl(208, 100%, 57%);
+  --clr-2-a: #2499ff;
   --clr-2-b: hsl(208, 100%, 70%);
-  --clr-2-c: hsl(208, 100%, 47%);
+  --clr-2-c: #0080f0;
   --clr-3-a: hsl(157, 69%, 51%);
   --clr-3-b: hsl(157, 70%, 66%);
   --clr-3-c: hsl(157, 70%, 35%);
@@ -129,6 +129,23 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.header-blob-tl {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/blob-haikei-header-tl.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-blob-tr {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/blob-haikei-header-tr.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
 }
 
 .header-content {
@@ -277,30 +294,37 @@ section {
 
 .color-theme > span:nth-child(1) {
   background: var(--clr-1-a);
+  grid-area: c1;
 }
 
 .color-theme > span:nth-child(2) {
   background: var(--clr-2-a);
   animation-delay: 0.125s;
+  grid-area: c2;
 }
 
 .color-theme > span:nth-child(3) {
   background: var(--clr-3-a);
   animation-delay: 0.25s;
+  grid-area: c3;
 }
 
 .color-theme > span:nth-child(4) {
   background: var(--clr-4-a);
   animation-delay: 0.375s;
+  grid-area: c4;
 }
 
 .color-theme > span:nth-child(5) {
   background: var(--clr-5-a);
   animation-delay: 0.5s;
+  grid-area: c5;
 }
 
 .introduction {
   background: var(--clr-2-a);
+  padding-top: 64px;
+  padding-bottom: 192px;
 }
 
 .intro-bg-cloud {
@@ -318,34 +342,37 @@ section {
   height: 100%;
   width: 100%;
   place-items: center;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
   grid-template-areas:
       "a r";
-  padding-inline: 32px;
-  padding-top: 64px;
-  padding-bottom: 160px;
-  grid-gap: 32px;
+  grid-gap: 64px;
+}
+
+.intro-about-ctn,
+.intro-role-ctn {
+  display: grid;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  grid-gap: 16px;
+  transition-delay: 0.25s;
 }
 
 .intro-about-ctn {
   grid-area: a;
   transform: translateX(-1440px);
-  margin-bottom: auto;
 }
+
+.intro-img-ctn { grid-area: i; }
+.intro-card-content { grid-area: c; }
 
 .intro-role-ctn {
   grid-area: r;
   transform: translateX(1440px);
 }
 
-.intro-about-ctn,
-.intro-role-ctn {
-  transition: all 0.5s ease-in-out;
-  position: relative;
-}
-
 .intro-img-ctn {
   width: 100%;
-  position: absolute;
   top: 0;
   filter: drop-shadow(-4px 4px var(--dark-1));
 }
