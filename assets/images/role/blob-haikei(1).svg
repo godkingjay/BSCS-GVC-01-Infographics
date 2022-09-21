@@ -1,0 +1,22 @@
+<svg id="visual" viewBox="0 0 1080 1080" width="1080" height="1080" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  
+  <filter id="blob">
+    <feDropShadow
+      dx="-20"
+      dy="40"
+      stdDeviation="0"
+      flood-color="#1b9868"
+      flood-opacity="50%"
+    />
+  </filter>
+  
+  <g transform="translate(517.7017582025933 554.751264924818)">
+    <g filter="url(#blob)">
+      <path
+        d="M317.4 -303.6C380.2 -254.6 378.6 -127.3 353.3 -25.3C327.9 76.6 278.9 153.2 216 198.2C153.2 243.2 76.6 256.6 -19.7 276.3C-116 296 -231.9 321.9 -284.1 276.9C-336.3 231.9 -324.6 116 -322.5 2.1C-320.4 -111.7 -327.8 -223.4 -275.6 -272.4C-223.4 -321.4 -111.7 -307.7 7.8 -315.5C127.3 -323.3 254.6 -352.6 317.4 -303.6"
+        fill="#1b9868">
+      </path>
+    </g>
+  </g>
+</svg>

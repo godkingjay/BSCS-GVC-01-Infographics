@@ -15,9 +15,9 @@
   --clr-2-a: #2499ff;
   --clr-2-b: #66b8ff;
   --clr-2-c: #0080f0;
-  --clr-3-a: hsl(157, 69%, 51%);
-  --clr-3-b: hsl(157, 70%, 66%);
-  --clr-3-c: hsl(157, 70%, 35%);
+  --clr-3-a: #2cd896;
+  --clr-3-b: #6ce5b6;
+  --clr-3-c: #1b9868;
   --clr-4-a: hsl(50, 100%, 50%);
   --clr-4-b: hsl(50, 100%, 65%);
   --clr-4-c: hsl(50, 100%, 40%);
@@ -334,7 +334,7 @@ section {
 .introduction {
   background: var(--clr-2-a);
   padding-top: 32px;
-  padding-bottom: 192px;
+  padding-bottom: 256px;
 }
 
 .intro-bg-cloud {
@@ -420,6 +420,17 @@ section {
   background-image: url('../images/ai/blob-haikei(2).svg');
 }
 
+.role-blob-1 {
+  width: 90%;
+  background-image: url('../images/role/blob-haikei(1).svg');
+}
+
+.role-blob-2 {
+  width: 85%;
+  background-image: url('../images/role/blob-haikei(2).svg');
+}
+
+
 .intro-card-content {
   display: flex;
   flex-direction: column;
@@ -448,9 +459,17 @@ section {
 }
 
 .intro-about-ctn > .intro-card-content > p {
-  background: #66b8ffb0;
+  background: #66b8ffc0;
   box-shadow: -16px 16px #66b8ff80,
               -32px 32px #66b8ff40;
+  animation: about-text-shadow-stretch 1.5s linear infinite;
+}
+
+.intro-role-ctn > .intro-card-content > p {
+  background: #2cd89680;
+  box-shadow: -16px 16px #2cd89640,
+              -32px 32px #2cd89620;
+  animation: role-text-shadow-stretch 1.5s linear infinite;
 }
 
 .intro-card-title-about {

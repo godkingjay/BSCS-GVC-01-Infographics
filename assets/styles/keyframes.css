@@ -31,6 +31,52 @@
   }
 }
 
+@keyframes about-text-shadow-stretch {
+  0% {
+    box-shadow: -16px 16px #66b8ff80,
+                -32px 32px #66b8ff40;
+  }
+  25% {
+    box-shadow: -16px 16px #66b8ff80,
+                -32px 32px #66b8ff40;
+  }
+  50% {
+    box-shadow: -24px 24px #66b8ff80,
+                -48px 48px #66b8ff40;
+  }
+  75% {
+    box-shadow: -24px 24px #66b8ff80,
+                -48px 48px #66b8ff40;
+  }
+  100% {
+    box-shadow: -16px 16px #66b8ff80,
+                -32px 32px #66b8ff40;
+  }
+}
+
+@keyframes role-text-shadow-stretch {
+  0% {
+    box-shadow: -16px 16px #2cd89640,
+                -32px 32px #2cd89620;
+  }
+  25% {
+    box-shadow: -16px 16px #2cd89640,
+                -32px 32px #2cd89620;
+  }
+  50% {
+    box-shadow: -24px 24px #2cd89640,
+                -48px 48px #2cd89620;
+  }
+  75% {
+    box-shadow: -24px 24px #2cd89640,
+                -48px 48px #2cd89620;
+  }
+  100% {
+    box-shadow: -16px 16px #2cd89640,
+                -32px 32px #2cd89620;
+  }
+}
+
 @keyframes role-title-shadow {
   0% {
     box-shadow: inset -4px 4px 4px #fff2,

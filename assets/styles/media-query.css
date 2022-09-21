@@ -3,6 +3,7 @@
     grid-template-areas:
         "a"
         "r";
+    grid-gap: 128px;
   }
 
   .intro-about-ctn {
@@ -16,16 +17,24 @@
   }
 
   .intro-img-ctn {
-    min-width: 384px;
+    min-width: 400px;
     margin-inline: auto;
   }
 
-  .intro-card-content > h2 {
-    margin-inline: auto;
+  .intro-role-ctn > .intro-card-content > h1 {
+    margin-right: auto;
+  }
+
+  .intro-role-ctn > .intro-card-content > h2 {
+    margin-left: auto;
   }
 }
 
 @media (max-width: 864px) {
+  .intro-content {
+    grid-gap: 32px;
+  }
+
   .intro-about-ctn,
   .intro-role-ctn {
     grid-template-areas:

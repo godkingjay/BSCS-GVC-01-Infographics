@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
   scrollIn.forEach((e) => {
     const pos = e.getBoundingClientRect();
 
-    if(pos.top * 2 >= 0 && pos.bottom/2 <= window.innerHeight) {
+    if(pos.top >= 0 && pos.bottom/2 <= window.innerHeight) {
       e.classList.add('scroll-in');
       console.log('visible');
     }
