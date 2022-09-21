@@ -22,11 +22,11 @@
   transition: all 0.2s ease-in-out;
 }
 
-.hover-listen:hover > .source-code {
+.hover-listen:hover>.source-code {
   transform: translateY(0);
 }
 
-.source-code > a {
+.source-code>a {
   height: 36px;
   aspect-ratio: 1;
   background: #bbb;
@@ -39,10 +39,10 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.source-code > a:hover {
+.source-code>a:hover {
   transform: scale(1.1);
 }
 
-.source-code > a > img {
+.source-code>a>img {
   height: 100%;
 }

@@ -116,13 +116,6 @@ section {
   min-height: 0;
 }
 
-.header-bg-icons-1 {
-  height: 100%;
-  width: 100%;
-  background-image: url('../images/Icon\ Grid.svg');
-  background-size: 200%;
-}
-
 .header-bg-shape-1 {
   height: 100%;
   width: 100%;
@@ -135,16 +128,6 @@ section {
   height: 50%;
   width: 100%;
   background-image: url('../images/Wave.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.header-animated-wave-1 {
-  bottom: 0;
-  height: 50%;
-  width: 100%;
-  background-image: url('../images/animated-waves.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -348,6 +331,16 @@ section {
   background: var(--clr-2-a);
   padding-top: 32px;
   padding-bottom: 256px;
+}
+
+.intro-bg-meteor {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/Meteor.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 80%;
 }
 
 .intro-bg-cloud {
@@ -570,6 +563,7 @@ section {
   max-width: 576px;
   aspect-ratio: 1;
   position: relative;
+  filter: drop-shadow(-6px 8px var(--lines-1));
 }
 
 .industry-circular > * {
@@ -632,36 +626,37 @@ section {
 
 .industry-circle:hover {
   scale: 1.05;
+  filter: drop-shadow(0 0 8px #0008);
 }
 
 .industry-circle-wrapper:nth-child(1) {
   transform: rotate(0deg);
-  animation: circle-rotate-1 30s linear infinite, circle-cyclic-anim-1 6s linear infinite 0s;
+  animation: circle-rotate-1 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(2) {
   transform: rotate(60deg);
-  animation: circle-rotate-2 30s linear infinite, circle-cyclic-anim-1 6s linear infinite 1s;
+  animation: circle-rotate-2 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(3) {
   transform: rotate(120deg);
-  animation: circle-rotate-3 30s linear infinite, circle-cyclic-anim-1 6s linear infinite 2s;
+  animation: circle-rotate-3 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(4) {
   transform: rotate(180deg);
-  animation: circle-rotate-4 30s linear infinite, circle-cyclic-anim-1 6s linear infinite 3s;
+  animation: circle-rotate-4 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(5) {
   transform: rotate(240deg);
-  animation: circle-rotate-5 30s linear infinite, circle-cyclic-anim-1 6s linear infinite 4s;
+  animation: circle-rotate-5 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(6) {
   transform: rotate(300deg);
-  animation: circle-rotate-6 30s linear infinite, circle-cyclic-anim-1 6s linear infinite 5s;
+  animation: circle-rotate-6 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(1)>.industry-circle {
