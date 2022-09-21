@@ -3,7 +3,7 @@
 
   <filter id="blob">
     <feDropShadow
-      dx="20"
+      dx="0"
       dy="60"
       stdDeviation="0"
       flood-color="#66b8ff"

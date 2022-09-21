@@ -35,7 +35,7 @@
 
   --lines-1: #131746;
 
-  --header-bg-clr: #0080ff;
+  --header-bg-clr: #66b8ffff;
 
   --text-clr: white; 
 }
@@ -400,6 +400,11 @@ section {
   transform: translate(-50%, -50%);
 }
 
+.intro-about-ctn > .intro-img-ctn > img {
+  width: 72%;
+  transform: translate(-50%, -62.5%);
+}
+
 .blob {
   background-repeat: no-repeat;
   background-size: cover;
@@ -438,9 +443,14 @@ section {
   font-size: 24px;
   text-align: justify;
   color: white;
-  background: #0001;
   padding: 32px;
   border-radius: 8px;
+}
+
+.intro-about-ctn > .intro-card-content > p {
+  background: #66b8ffb0;
+  box-shadow: -16px 16px #66b8ff80,
+              -32px 32px #66b8ff40;
 }
 
 .intro-card-title-about {

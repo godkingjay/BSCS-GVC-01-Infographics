@@ -1,5 +1,7 @@
 Resources:
 
+[ai-development-3454695-2918404.png](https://iconscout.com/illustration/ai-development-3454695)
+
 [ai-illustration.png](https://www.pinclipart.com/pindetail/ibiwTJm_ai-artificial-intelligence-company-ai-development-png-clipart/)
 
 [ai-logo.png](https://www.cleanpng.com/png-artificial-intelligence-research-synthetic-intelli-5894619/)
