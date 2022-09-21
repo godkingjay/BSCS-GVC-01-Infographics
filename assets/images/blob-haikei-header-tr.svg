@@ -6,7 +6,8 @@
       dx="12"
       dy="12"
       stdDeviation="0.0"
-      flood-color="hsla(208, 100%, 40%, 0.5)"
+      flood-color="hsl(208, 100%, 57%)"
+      flood-opacity="40%"
     />
   </filter>
 

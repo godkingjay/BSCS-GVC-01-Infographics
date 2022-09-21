@@ -125,8 +125,8 @@
 
   .intro-role-ctn {
     grid-template-areas:
-        "c"
-        "i";
+        "i"
+        "c";
   }
 }
 

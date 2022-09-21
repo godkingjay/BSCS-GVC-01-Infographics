@@ -131,6 +131,16 @@ section {
   background-position: bottom;
 }
 
+.header-animated-wave-1 {
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background-image: url('../images/animated-waves.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 .header-blob-tl {
   height: 100%;
   width: 100%;
@@ -390,6 +400,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 32px;
 }
 
 .intro-card-content > h2 {
