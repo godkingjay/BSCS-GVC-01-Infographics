@@ -579,7 +579,7 @@ section {
 }
 
 .industry-ratio {
-  max-width: 35%;
+  max-width: 40%;
   width: 100%;
   aspect-ratio: 1;
   background: var(--brown-2);
@@ -589,12 +589,21 @@ section {
 }
 
 .industry-title {
-  max-width: 20%;
+  max-width: 30%;
   width: 100%;
   aspect-ratio: 1;
   background: var(--brown-1);
   border-radius: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.industry-title > h2 {
+  color: var(--white-1);
+  text-align: center;
 }
 
 .industry-circle-ctn > * {
@@ -626,7 +635,7 @@ section {
 }
 
 .industry-circle:hover {
-  scale: 1.1;
+  scale: 1.05;
   filter: drop-shadow(0 0 8px #0008);
 }
 
@@ -715,11 +724,60 @@ section {
 }
 
 .industry-circle>h2 {
+  font-weight: 400;
   text-align: center;
   width: 100%;
   color: var(--white-1);
-  text-shadow: -3px 3px var(--white-5);
+  text-shadow: -2px 2px var(--white-6);
   font-size: 24px;
+}
+
+.industry-circle:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  font-size: 24px;
+  font-family: 'Oswald Bold', sans-serif;
+  color: white;
+  text-shadow: -2px 2px #0004;
+  box-shadow: 1px 4px #0003;
+  border: 2px solid #0004;
+}
+
+.industry-circle-wrapper:nth-child(1)>.industry-circle:before {
+  content: '1';
+  background: var(--clr-3-b);
+}
+
+.industry-circle-wrapper:nth-child(2)>.industry-circle:before {
+  content: '2';
+  background: var(--clr-4-b);
+}
+
+.industry-circle-wrapper:nth-child(3)>.industry-circle:before {
+  content: '3';
+  background: var(--clr-5-b);
+}
+
+.industry-circle-wrapper:nth-child(4)>.industry-circle:before {
+  content: '4';
+  background: var(--clr-1-b);
+}
+
+.industry-circle-wrapper:nth-child(5)>.industry-circle:before {
+  content: '5';
+  background: var(--clr-2-b);
+}
+
+.industry-circle-wrapper:nth-child(6)>.industry-circle:before {
+  content: '6';
+  background: var(--clr-6-b);
 }
 
 .others {
