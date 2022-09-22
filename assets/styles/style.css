@@ -955,8 +955,8 @@ section {
 .industry-card-wrapper {
   width: 100%;
   position: relative;
-  transition: all 1s ease-in-out;
-  transition-delay: 0.125s;
+  transition: all .75s ease-in-out;
+  transition-delay: .125s;
 }
 
 .industry-card {

@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
   fade1.forEach((e) => {
     const pos = e.getBoundingClientRect();
 
-    if(pos.top >= 0 && pos.bottom/2 <= window.innerHeight) {
+    if(pos.top >= 0 && pos.bottom/1.5 <= window.innerHeight) {
       e.classList.remove('fade-1');
     }
   });
