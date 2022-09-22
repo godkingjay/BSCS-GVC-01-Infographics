@@ -1,3 +1,15 @@
+@media (max-width: 1420px) {
+  .industry-ctn {
+    grid-template-areas:
+        "i1"
+        "i2"
+        "i3"
+        "i4"
+        "i5"
+        "i6";
+  }
+}
+
 @media (max-width: 976px) {
   .intro-content {
     grid-template-areas:
