@@ -1176,6 +1176,14 @@ section {
   box-shadow: 0 0 8px #fff;
 }
 
+.industry-card-wrapper:nth-child(odd) > .industry-card > .industry-card-img-ctn > img {
+  filter: drop-shadow(6px 6px #0004);
+}
+
+.industry-card-wrapper:nth-child(even) > .industry-card > .industry-card-img-ctn > img {
+  filter: drop-shadow(-6px 6px #0004);
+}
+
 .industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-img-ctn > img {
   filter: drop-shadow(6px 6px #0004) hue-rotate(30deg);
 }
