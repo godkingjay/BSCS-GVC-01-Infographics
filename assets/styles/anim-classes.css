@@ -1,3 +1,19 @@
-.scroll-in {
-  transform: translateX(0);
+.s1-a {
+  translate: -1440px;
+}
+
+.s1-b {
+  translate: 1440px;
+}
+
+.fade-1 {
+  opacity: 0;
+}
+
+.s2-a {
+  translate: -1440px;
+}
+
+.s2-b {
+  translate: 1440px;
 }
