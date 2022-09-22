@@ -40,6 +40,13 @@
   .intro-role-ctn > .intro-card-content > h2 {
     margin-left: auto;
   }
+
+  .industry-card {
+    max-width: 768px;
+    grid-template-areas:
+        "i"
+        "c" !important;
+  }
 }
 
 @media (max-width: 864px) {
@@ -65,6 +72,10 @@
         "i t"
         "p p"
         "c c";
+  }
+
+  .industry-card {
+    row-gap: 64px;
   }
 }
 
@@ -144,7 +155,9 @@
     max-width: 356px;
   }
 
-  
+  .industry-card-img-ctn {
+    min-width: 192px;
+  }
 }
 
 @media (max-width: 448px) {
@@ -221,6 +234,10 @@
 
   .color-theme > span {
     width: 36px;
+  }
+
+  .industry-card-img-ctn {
+    min-width: 128px;
   }
 }
 

@@ -406,3 +406,21 @@
     scale: 1.0;
   }
 }
+
+@keyframes indus-b-rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes indus-b-rotate-rev {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}

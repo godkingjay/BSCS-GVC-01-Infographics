@@ -8,10 +8,10 @@
 	<rect style="fill:#D8D8D8;" width="256" height="512"/>
 </g>
 <rect x="53.897" y="53.898" style="fill:#EEEEEE;" width="202.104" height="404.208"/>
-<rect x="394.376" y="229.972" style="fill:#898989;" width="31.347" height="52.049"/>
+<rect x="394.376" y="229.972" style="fill:#a6a3ff;" width="31.347" height="52.049"/>
 <g>
-	<rect x="27.873" y="87.259" style="fill:#B3B3B3;" width="73.613" height="31.347"/>
-	<rect x="27.873" y="393.394" style="fill:#B3B3B3;" width="73.613" height="31.347"/>
+	<rect x="27.873" y="87.259" style="fill:#a6a3ff;" width="73.613" height="31.347"/>
+	<rect x="27.873" y="393.394" style="fill:#a6a3ff;" width="73.613" height="31.347"/>
 </g>
 <polygon style="fill:#FC2B32;" points="287.979,224.021 287.979,150.002 256,150.002 235.085,256 256,361.998 287.979,361.998 
 	287.979,287.979 361.998,287.979 361.998,224.021 "/>
