@@ -11,7 +11,7 @@
 :root {
   --clr-1-a: #8480ff;
   --clr-1-b: #a6a3ff;
-  --clr-1-c: #524dff;
+  --clr-1-c: #524dc0;
   --clr-2-a: #2499ff;
   --clr-2-b: #66b8ff;
   --clr-2-c: #0080f0;
@@ -462,7 +462,7 @@ section {
   padding-inline: 16px;
   border-radius: 4px;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-shadow: -2px 2px var(--white-5);
 }
 
@@ -560,10 +560,9 @@ section {
 .industry-circular {
   display: flex;
   width: 100%;
-  max-width: 576px;
+  max-width: 640px;
   aspect-ratio: 1;
   position: relative;
-  filter: drop-shadow(-6px 8px var(--lines-1));
 }
 
 .industry-circular > * {
@@ -622,6 +621,8 @@ section {
   border-radius: 50%;
   background: black;
   transition: all 0.2s ease-in-out;
+  padding: 8px;
+  position: relative;
 }
 
 .industry-circle:hover {
@@ -662,42 +663,63 @@ section {
 .industry-circle-wrapper:nth-child(1)>.industry-circle {
   background: var(--clr-3-a);
   transform: rotate(0deg);
+  box-shadow: inset -4px 4px 4px #fff4,
+              inset 2px -2px 4px #0004,
+              -6px 6px var(--clr-3-c);
   animation: circle-name-rotate-1 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(2)>.industry-circle {
   background: var(--clr-4-a);
   transform: rotate(-60deg);
+  box-shadow: inset -4px 4px 4px #fff4,
+              inset 2px -2px 4px #0004,
+              -6px 6px var(--clr-4-c);
   animation: circle-name-rotate-2 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(3)>.industry-circle {
   background: var(--clr-5-a);
   transform: rotate(-120deg);
+  box-shadow: inset -4px 4px 4px #fff4,
+              inset 2px -2px 4px #0004,
+              -6px 6px var(--clr-5-c);
   animation: circle-name-rotate-3 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(4)>.industry-circle {
   background: var(--clr-1-a);
   transform: rotate(-180deg);
+  box-shadow: inset -4px 4px 4px #fff4,
+              inset 2px -2px 4px #0004,
+              -6px 6px var(--clr-1-c);
   animation: circle-name-rotate-4 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(5)>.industry-circle {
   background: var(--clr-2-a);
   transform: rotate(-240deg);
+  box-shadow: inset -4px 4px 4px #fff4,
+              inset 2px -2px 4px #0004,
+              -6px 6px var(--clr-2-c);
   animation: circle-name-rotate-5 30s linear infinite;
 }
 
 .industry-circle-wrapper:nth-child(6)>.industry-circle {
   background: var(--clr-6-a);
   transform: rotate(-300deg);
+  box-shadow: inset -4px 4px 4px #fff4,
+              inset 2px -2px 4px #0004,
+              -6px 6px var(--clr-6-c);
   animation: circle-name-rotate-6 30s linear infinite;
 }
 
 .industry-circle>h2 {
   text-align: center;
   width: 100%;
+  color: var(--white-1);
+  text-shadow: -3px 3px var(--white-5);
+  font-size: 24px;
 }
 
 .others {
