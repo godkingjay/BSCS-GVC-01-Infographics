@@ -952,9 +952,11 @@ section {
   gap: 160px;
 }
 
-.industry-wrapper {
+.industry-card-wrapper {
   width: 100%;
   position: relative;
+  transition: all 1s ease-in-out;
+  transition-delay: 0.125s;
 }
 
 .industry-card {
