@@ -963,7 +963,7 @@ section {
   max-width: 928px;
   margin-inline: auto;
   display: grid;
-  column-gap: 32px;
+  column-gap: 96px;
   place-items: center;
   row-gap: 32px;
 }
