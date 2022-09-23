@@ -1,0 +1,44 @@
+<svg id="visual" viewBox="0 0 1440 840" width="1440" height="840" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <g>
+    <g transform="translate(321 575)">
+      <path d="M0 -111.2L96.3 -55.6L96.3 55.6L0 111.2L-96.3 55.6L-96.3 -55.6Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(847 600)">
+      <path d="M0 -19L16.5 -9.5L16.5 9.5L0 19L-16.5 9.5L-16.5 -9.5Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(367 328)">
+      <path d="M0 -52L45 -26L45 26L0 52L-45 26L-45 -26Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(798 221)">
+      <path d="M0 -36L31.2 -18L31.2 18L0 36L-31.2 18L-31.2 -18Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(644 421)">
+      <path d="M0 -19L16.5 -9.5L16.5 9.5L0 19L-16.5 9.5L-16.5 -9.5Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(1038 236)">
+      <path d="M0 -16L13.9 -8L13.9 8L0 16L-13.9 8L-13.9 -8Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(1196 673)">
+      <path d="M0 -93L80.5 -46.5L80.5 46.5L0 93L-80.5 46.5L-80.5 -46.5Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(1272 174)">
+      <path d="M0 -89L77.1 -44.5L77.1 44.5L0 89L-77.1 44.5L-77.1 -44.5Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(1109 463)">
+      <path d="M0 -33L28.6 -16.5L28.6 16.5L0 33L-28.6 16.5L-28.6 -16.5Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(112 398)">
+      <path d="M0 -32L27.7 -16L27.7 16L0 32L-27.7 16L-27.7 -16Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(132 121)">
+      <path d="M0 -84L72.7 -42L72.7 42L0 84L-72.7 42L-72.7 -42Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(558 139)">
+      <path d="M0 -28L24.2 -14L24.2 14L0 28L-24.2 14L-24.2 -14Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+    <g transform="translate(572 665)">
+      <path d="M0 -36L31.2 -18L31.2 18L0 36L-31.2 18L-31.2 -18Z" fill="hsla(243, 48%, 53%, 1)"></path>
+    </g>
+  </g>
+</svg>

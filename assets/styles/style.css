@@ -9,9 +9,9 @@
 }
 
 :root {
-  --clr-1-a: #8480ff;
+  --clr-1-a: hsl(242, 100%, 75%);
   --clr-1-b: #a6a3ff;
-  --clr-1-c: #524dc0;
+  --clr-1-c: hsl(243, 48%, 53%);
   --clr-1-d: #645cff;
   --clr-2-a: #2499ff;
   --clr-2-b: #66b8ff;
@@ -1284,6 +1284,7 @@ section {
   background: var(--clr-1-a);
   margin-top: 0;
   padding-top: 0;
+  padding-bottom: 256px;
 }
 
 .others-bg-end {
@@ -1296,9 +1297,12 @@ section {
 }
 
 .others-content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-top: 64px;
   margin-bottom: auto;
+  gap: 32px;
 }
 
 .others-title-wrapper {
@@ -1321,9 +1325,11 @@ section {
 }
 
 .others-title-wrapper > span:nth-of-type(1) {
-  background-image: url('../images/advantages/Circuit\ Board\(1\).svg');
+  background-image: url("../images/advantages/polygon-scatter-haikei(1).svg");
   background-size: cover;
   background-position: center;
+  opacity: 0.2;
+  animation: bg-scale-2 8s linear infinite;
 }
 
 .others-title {
@@ -1362,7 +1368,6 @@ section {
   position: absolute;
   height: 100%;
   width: 100%;
-  content: '';
 }
 
 .others-title-img-ctn > span:nth-last-of-type(1) {
@@ -1402,6 +1407,43 @@ section {
 
 .others-title > h2:hover {
   transform: scale(1.1);
+}
+
+.others-advantages-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.others-advantages-ctn {
+  width: 100%;
+  max-width: 1080px;
+  padding-inline: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: white;
+}
+
+.others-advantage-card {
+  background: wheat;
+  display: flex;
+}
+
+.others-advantage-img-ctn {
+  width: 100%;
+  max-width: 256px;
+  aspect-ratio: 1;
+  background: lightgoldenrodyellow;
+}
+
+.others-advantage-card > p {
+  display: inline-block;
+  height: max-content;
+  width: 100%;
+  background: lightcoral;
 }
 
 .footer {
