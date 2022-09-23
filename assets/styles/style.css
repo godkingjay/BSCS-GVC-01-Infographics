@@ -1467,6 +1467,7 @@ section {
   max-width: 160px;
   aspect-ratio: 1;
   translate: 0 -30%;
+  animation: advantage-img-1 6s cubic-bezier(.81,-0.21,.3,1.52) infinite;
 }
 
 .others-advantage-img-ctn > span {
@@ -1487,7 +1488,7 @@ section {
   align-self: 1;
   background: white;
   translate: 0 -10%;
-  border-radius: 0 0 40% 40%;
+  border-radius: 100% 100% 80% 80%;
 }
 
 .others-advantage-card > p {
@@ -1501,7 +1502,7 @@ section {
   color: var(--white-1);
 }
 
-.others-advantage-img-ctn > span:nth-last-of-type(1),
+.others-advantage-img-ctn > span:nth-of-type(1),
 .others-advantage-card > p {
   box-shadow: inset -4px 4px 4px #fff2,
               inset 2px -2px 2px #0002;
@@ -1513,7 +1514,7 @@ section {
 
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(1),
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-card > p {
-  background: var(--clr-1-b);
+  background: var(--clr-1-a);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 3) .others-advantage-img-ctn > span:nth-of-type(1),
@@ -1536,6 +1537,10 @@ section {
   background: var(--clr-5-d);
 }
 
+.others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(2) {
+  background: var(--clr-1-c);
+  opacity: 30%;
+}
 
 .footer {
   min-height: max-content;

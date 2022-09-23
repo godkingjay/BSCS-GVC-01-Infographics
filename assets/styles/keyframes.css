@@ -471,3 +471,42 @@
           drop-shadow(-10px 10px #524dc040);
   }
 }
+
+@keyframes advantage-img-1 {
+  0% {
+    transform: translate(0, 0);
+    rotate: 0deg;
+  }
+  2.5% {
+    transform: translate(-2.5%, 0);
+    rotate: 1.25deg;
+  }
+  5% {
+    transform: translate(2.5%, 0);
+    rotate: -1.25deg;
+  }
+  7.5% {
+    transform: translate(-2.5%, 0);
+    rotate: 1.75deg;
+  }
+  10% {
+    transform: translate(2.5%, 0);
+    rotate: -1.75deg;
+  }
+  12.25% {
+    transform: translate(0, 0);
+    rotate: 0deg;
+  }
+  25% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -20%);
+  }
+  75% {
+    transform: translate(0, -20%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
