@@ -30,6 +30,7 @@
   --clr-5-b: #ffac4d;
   --clr-5-c: #cc6d00;
   --clr-5-d: #e67a00;
+  --clr-5-e: hsl(32, 100%, 30%);
   --clr-6-a: #b0b0b0;
   --clr-6-b: #e0e0e0;
   --clr-6-c: #808080;
@@ -1424,7 +1425,7 @@ section {
   padding-inline: 32px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 64px;
 }
 
 .others-advantage-card-wrapper {
@@ -1456,6 +1457,7 @@ section {
 
 .others-advantage-card-wrapper:nth-child(even) .others-advantage-card {
   margin-inline: auto;
+  flex-direction: row-reverse;
 }
 
 .others-advantage-card-wrapper:nth-child(4n - 1) .others-advantage-card {
@@ -1466,9 +1468,32 @@ section {
   width: 100%;
   max-width: 160px;
   aspect-ratio: 1;
-  translate: 0 -30%;
+  translate: 0 -20%;
   animation: advantage-img-1 6s cubic-bezier(.81,-0.21,.3,1.52) infinite;
+  transition: all 0.5s ease-in-out;
 }
+
+.others-advantage-img-ctn:hover {
+  scale: 1.05;
+}
+
+.others-advantage-card-wrapper:nth-child(odd) .others-advantage-card > p {
+  transform-origin: left;
+}
+
+.others-advantage-card-wrapper:nth-child(even) .others-advantage-card > p {
+  transform-origin: right;
+}
+
+.others-advantage-card-wrapper:nth-child(1) .others-advantage-img-ctn { animation-delay: 0s; }
+.others-advantage-card-wrapper:nth-child(2) .others-advantage-img-ctn { animation-delay: 0.25s; }
+.others-advantage-card-wrapper:nth-child(3) .others-advantage-img-ctn { animation-delay: 0.5s; }
+.others-advantage-card-wrapper:nth-child(4) .others-advantage-img-ctn { animation-delay: 0.75s; }
+.others-advantage-card-wrapper:nth-child(5) .others-advantage-img-ctn { animation-delay: 1s; }
+.others-advantage-card-wrapper:nth-child(6) .others-advantage-img-ctn { animation-delay: 1.25s; }
+.others-advantage-card-wrapper:nth-child(7) .others-advantage-img-ctn { animation-delay: 1.5s; }
+.others-advantage-card-wrapper:nth-child(8) .others-advantage-img-ctn { animation-delay: 1.75s; }
+.others-advantage-card-wrapper:nth-child(9) .others-advantage-img-ctn { animation-delay: 2s; }
 
 .others-advantage-img-ctn > span {
   position: absolute;
@@ -1500,6 +1525,11 @@ section {
   background: lightcoral;
   font-size: 20px;
   color: var(--white-1);
+  transition: all 0.4s ease-in-out;
+}
+
+.others-advantage-card > p:hover {
+  transform: scale(1.0375);
 }
 
 .others-advantage-img-ctn > span:nth-of-type(1),
@@ -1508,8 +1538,12 @@ section {
               inset 2px -2px 2px #0002;
 }
 
-.others-advantage-card-wrapper .others-advantage-card > p {
+.others-advantage-card-wrapper:nth-child(odd) .others-advantage-card > p {
   border-radius: 0 1000px 1000px 1000px;
+}
+
+.others-advantage-card-wrapper:nth-child(even) .others-advantage-card > p {
+  border-radius: 1000px 0 1000px 1000px;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(1),
@@ -1540,6 +1574,26 @@ section {
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(2) {
   background: var(--clr-1-c);
   opacity: 30%;
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 3) .others-advantage-img-ctn > span:nth-of-type(2) {
+  background: var(--clr-2-e);
+  opacity: 20%;
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 2) .others-advantage-img-ctn > span:nth-of-type(2) {
+  background: var(--clr-3-c);
+  opacity: 70%;
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-img-ctn > span:nth-of-type(2) {
+  background: var(--clr-4-c);
+  opacity: 40%;
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 0) .others-advantage-img-ctn > span:nth-of-type(2) {
+  background: var(--clr-5-e);
+  opacity: 40%;
 }
 
 .footer {
