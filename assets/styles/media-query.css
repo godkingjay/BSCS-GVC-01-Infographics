@@ -150,6 +150,10 @@
   .others-title-img-ctn {
     max-width: 288px;
   }
+
+  .others-advantage-card > p {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 732px) {
@@ -222,6 +226,14 @@
 
   .others-title > h2 {
     font-size: 40px;
+  }
+
+  .others-advantage-img-ctn {
+    max-width: 128px;
+  }
+
+  .others-advantage-card > p {
+    font-size: 16px;
   }
 }
 
@@ -355,10 +367,18 @@
 
   .others-title > h2 {
     font-size: 24px;
+    word-wrap: break-word;
+    white-space: normal;
   }
 }
 
 @media (max-width: 336px) {
+  .intro-card-content,
+  .others-title,
+  .others-advantage-card-ctn {
+    padding-inline: 16px;
+  }
+
   .header-logo {
     scale: 0.8;
   }
@@ -383,6 +403,26 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-inline: auto;
+  }
+
+  .industry-card-content-ctn > h2,
+  .others-title > h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 288px) {
+  .introduction .content h2,
+  .industries .content h2,
+  .others .content h2 {
+    font-size: 16px;
+    padding-inline: 16px;
+  }
+
+  .introduction .content p,
+  .industries .content p,
+  .others .content p {
+    font-size: 12px;
   }
 }
 

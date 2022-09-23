@@ -1458,35 +1458,35 @@ section {
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-card {
   filter: drop-shadow(-6px 6px #524dc080)
           drop-shadow(-10px 10px #524dc040);
-  animation: advantage-card-1-shadow 3s infinite;
+  animation: advantage-card-1-shadow 2s infinite;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 3) .others-advantage-card {
   filter: drop-shadow(-6px 6px #00529960)
           drop-shadow(-10px 10px #00529940);
-  animation: advantage-card-2-shadow 3s infinite;
+  animation: advantage-card-2-shadow 2s infinite;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 2) .others-advantage-card {
   filter: drop-shadow(-6px 6px #1b986880)
           drop-shadow(-10px 10px #1b986840);
-  animation: advantage-card-3-shadow 3s infinite;
+  animation: advantage-card-3-shadow 2s infinite;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-card {
   filter: drop-shadow(-6px 6px #ccaa0060)
           drop-shadow(-10px 10px #ccaa0030);
-  animation: advantage-card-4-shadow 3s infinite;
+  animation: advantage-card-4-shadow 2s infinite;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 0) .others-advantage-card {
   filter: drop-shadow(-6px 6px #cc6d0060)
           drop-shadow(-10px 10px #cc6d0320);
-  animation: advantage-card-5-shadow 3s infinite;
+  animation: advantage-card-5-shadow 2s infinite;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -1551,11 +1551,12 @@ section {
   padding-block: 16px;
   width: 100%;
   background: lightcoral;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--white-1);
   transition: all 0.4s ease-in-out;
   transform-origin: left;
   text-align: justify;
+  line-height: 2.5ch;
 }
 
 .others-advantage-card > p:hover {
