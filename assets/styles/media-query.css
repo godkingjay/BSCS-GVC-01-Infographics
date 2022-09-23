@@ -41,6 +41,10 @@
     margin-left: auto;
   }
 
+  .industry-content {
+    padding-bottom: 128px;
+  }
+
   .industry-ctn {
     row-gap: 96px;
   }
@@ -51,6 +55,14 @@
         "i"
         "c" !important;
     row-gap: 64px;
+  }
+
+  .others-title-img-ctn {
+    max-width: 302px;
+  }
+
+  .others-title > h2 {
+    font-size: 40px;
   }
 }
 
@@ -68,6 +80,10 @@
 
   .intro-card-content > h2 {
     margin-inline: auto;
+  }
+
+  .others-title > h2 {
+    font-size: 36px;
   }
 }
 
@@ -130,6 +146,10 @@
   .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-img-ctn > span:nth-of-type(2) {
     filter: drop-shadow(-4px 4px #80808080) drop-shadow(-8px 8px #80808040);
   }
+
+  .others-title-img-ctn {
+    max-width: 288px;
+  }
 }
 
 @media (max-width: 732px) {
@@ -157,6 +177,23 @@
   .header-content > * {
     max-width: 496px;
   }
+
+  .others-title {
+    grid-template-areas:
+        "i"
+        "c";
+  }
+
+  .others-title-img-ctn {
+    width: 100%;
+    max-width: 384px;
+    margin-inline: auto;
+  }
+
+  .others-title > h2 {
+    font-size: 48px;
+    padding-inline: 48px;
+  }
 }
 
 @media (max-width: 656px) {
@@ -181,6 +218,10 @@
 
   .industry-circle-wrapper:nth-child(1)>.industry-circle > h2 {
     font-size: 17px;
+  }
+
+  .others-title > h2 {
+    font-size: 40px;
   }
 }
 
@@ -211,9 +252,21 @@
   .industry-card-img-ctn {
     min-width: 192px;
   }
+
+  .others-title-img-ctn {
+    max-width: 288px;
+  }
+
+  .others-title > h2 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 448px) {
+  .introduction {
+    padding-bottom: 128px;
+  }
+  
   .header-logo {
     height: 192px !important;
   }
@@ -260,6 +313,22 @@
     align-items: center;
     justify-content: center;
   }
+
+  .industry-card-img-ctn > span:nth-last-of-type(2) {
+    font-size: 30px;
+  }
+
+  .industry-card-content-ctn > ul > li {
+    font-size: 16px;
+  }
+
+  .others-title-img-ctn {
+    max-width: 256px;
+  }
+
+  .others-title > h2 {
+    font-size: 28 px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -271,7 +340,20 @@
     font-size: 24px;
   }
 
+  .intro-card-content > p {
+    font-size: 16px;
+    padding: 16px;
+  }
+
   .industry-card-img-ctn > span:nth-of-type(2) {
+    font-size: 24px;
+  }
+
+  .others-title-img-ctn {
+    max-width: 192px;
+  }
+
+  .others-title > h2 {
     font-size: 24px;
   }
 }

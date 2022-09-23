@@ -211,6 +211,7 @@ section {
   border-right: 4px solid transparent;
   animation: rotate 1s linear infinite;
   animation: rotate-reverse 1s linear infinite;
+  transform: rotate(270deg);
 }
 
 .header-logo>span:nth-of-type(3) {
@@ -219,6 +220,7 @@ section {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   animation: rotate 1.5s linear infinite;
+  transform: rotate(300deg);
 }
 
 .header-content>h1 {
@@ -483,9 +485,9 @@ section {
 }
 
 .intro-about-ctn>.intro-card-content>p {
-  background: #66b8ffc0;
-  box-shadow: -16px 16px #66b8ff80,
-    -32px 32px #66b8ff40;
+  background: #2499ff40;
+  box-shadow: -16px 16px #0080f040,
+    -32px 32px #0080f020;
   animation: about-text-shadow-stretch 1.5s linear infinite;
 }
 
@@ -506,7 +508,7 @@ section {
 }
 
 .intro-card-title-role {
-  background: var(--clr-3-b);
+  background: var(--clr-3-a);
   box-shadow: inset -4px 4px 4px #fff2,
     inset 2px -2px 4px #0002,
     -4px 4px var(--clr-3-c),
@@ -571,7 +573,7 @@ section {
 .industry-circular {
   display: flex;
   width: 100%;
-  max-width: 640px;
+  max-width: 768px;
   aspect-ratio: 1;
   position: relative;
   transition: all 1s ease-in-out;
@@ -782,7 +784,9 @@ section {
   font-family: 'Oswald Bold', sans-serif;
   color: white;
   text-shadow: -2px 2px #0004;
-  box-shadow: -1px 4px #0003;
+  box-shadow: -1px 4px #0003,
+              inset -4px 4px 4px #fff4,
+              inset 2px -2px 2px #0002;
 }
 
 .industry-circle-wrapper:nth-child(1)>.industry-circle::before {
@@ -966,6 +970,8 @@ section {
   column-gap: 96px;
   place-items: center;
   row-gap: 32px;
+  transition: all .75s ease-in-out;
+  transition-delay: .125s;
 }
 
 .industry-card-wrapper:nth-child(odd) > .industry-card {
@@ -1135,27 +1141,27 @@ section {
 
 .industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-img-ctn > span:nth-of-type(1)::before {
   transform: rotate(-30deg);
-  animation-delay: 0.125s;
+  animation-delay: 0.25s;
 }
 
 .industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-img-ctn > span:nth-of-type(1)::before {
   transform: rotate(-150deg);
-  animation-delay: 0.25s;
+  animation-delay: 0.5s;
 }
 
 .industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-img-ctn > span:nth-of-type(1)::before {
   transform: rotate(-180deg);
-  animation-delay: 0.375s;
+  animation-delay: 0.75s;
 }
 
 .industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-img-ctn > span:nth-of-type(1)::before {
   transform: rotate(-210deg);
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-img-ctn > span:nth-of-type(1)::before {
   transform: rotate(30deg);
-  animation-delay: 0.625s;
+  animation-delay: 1.25s;
 }
 
 .industry-card-img-ctn > img {
@@ -1276,6 +1282,8 @@ section {
 
 .others {
   background: var(--clr-1-a);
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .others-bg-end {
@@ -1285,6 +1293,115 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.others-content {
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: auto;
+}
+
+.others-title-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  filter: drop-shadow(-6px 6px #524dc080)
+          drop-shadow(-10px 10px #524dc040);
+  animation: others-title-shadow 2s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-title-wrapper > span {
+  z-index: -100;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.others-title-wrapper > span:nth-of-type(1) {
+  background-image: url('../images/advantages/Circuit\ Board\(1\).svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.others-title {
+  margin-bottom: auto;
+  display: grid;
+  grid-template-areas: "i c";
+  column-gap: 32px;
+  row-gap: 16px;
+  padding-inline: 32px;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  max-width: 1080px;
+  /* background: wheat; */
+}
+
+.others-title-img-ctn {
+  grid-area: i;
+  max-width: 384px;
+  aspect-ratio: 1;
+  margin-block: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.others-title-img-ctn:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px #0002);
+}
+
+.others-title-img-ctn > span {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: '';
+}
+
+.others-title-img-ctn > span:nth-last-of-type(1) {
+  z-index: -2;
+  background-image: url('../images/advantages/circle-scatter-haikei.svg');
+  background-size: cover;
+  rotate: 180deg;
+  animation: bg-scale-1 6s linear infinite alternate;
+}
+
+.others-title-img-ctn > span:nth-last-of-type(2) {
+  background-image: url('../images/advantages/blob-haikei(1).svg');
+  background-size: cover;
+}
+
+.others-title-img-ctn img {
+  width: 90%;
+  margin-right: -3%;
+  margin-top: -35%;
+}
+
+.others-title > h2 {
+  grid-area: c;
+  font-size: 48px;
+  padding-inline: 32px;
+  padding-block: 8px;
+  color: var(--white-1);
+  background: var(--clr-1-a);
+  text-shadow: -4px 4px #0004;
+  border-radius: 1000px;
+  text-transform: uppercase;
+  box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 4px #0002;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+
+.others-title > h2:hover {
+  transform: scale(1.1);
 }
 
 .footer {
