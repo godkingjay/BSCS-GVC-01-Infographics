@@ -21,7 +21,7 @@ window.addEventListener('scroll', function() {
   s1A.forEach((e) => {
     const pos = e.getBoundingClientRect();
 
-    if(pos.top >= 0 && pos.bottom/2 <= window.innerHeight) {
+    if(pos.top >= 0 && pos.bottom/3 <= window.innerHeight) {
       e.classList.remove('s1-a');
     }
   });
