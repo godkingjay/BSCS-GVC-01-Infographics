@@ -1417,15 +1417,6 @@ section {
   width: 100%;
   position: relative;
   flex-direction: column;
-  gap: 48px;
-}
-
-.others-advantages-ctn {
-  width: 100%;
-  padding-inline: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
 }
 
 .others-advantage-card-wrapper {
@@ -1439,6 +1430,7 @@ section {
   width: 100%;
   max-width: 1080px;
   padding-inline: 32px;
+  padding-block: 24px;
 }
 
 .others-advantage-card {
@@ -1457,12 +1449,56 @@ section {
 
 .others-advantage-card-wrapper:nth-child(even) .others-advantage-card {
   margin-inline: auto;
-  flex-direction: row-reverse;
 }
 
 .others-advantage-card-wrapper:nth-child(4n - 1) .others-advantage-card {
   margin-left: auto;
 }
+
+.others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-card {
+  filter: drop-shadow(-6px 6px #524dc080)
+          drop-shadow(-10px 10px #524dc040);
+  animation: advantage-card-1-shadow 3s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 3) .others-advantage-card {
+  filter: drop-shadow(-6px 6px #00529960)
+          drop-shadow(-10px 10px #00529940);
+  animation: advantage-card-2-shadow 3s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 2) .others-advantage-card {
+  filter: drop-shadow(-6px 6px #1b986880)
+          drop-shadow(-10px 10px #1b986840);
+  animation: advantage-card-3-shadow 3s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-card {
+  filter: drop-shadow(-6px 6px #ccaa0060)
+          drop-shadow(-10px 10px #ccaa0030);
+  animation: advantage-card-4-shadow 3s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 0) .others-advantage-card {
+  filter: drop-shadow(-6px 6px #cc6d0060)
+          drop-shadow(-10px 10px #cc6d0320);
+  animation: advantage-card-5-shadow 3s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(1) .others-advantage-card { animation-delay: 0s; } 
+.others-advantage-card-wrapper:nth-child(2) .others-advantage-card { animation-delay: 0.5s; }
+.others-advantage-card-wrapper:nth-child(3) .others-advantage-card { animation-delay: 1s; }
+.others-advantage-card-wrapper:nth-child(4) .others-advantage-card { animation-delay: 1.5s; }
+.others-advantage-card-wrapper:nth-child(5) .others-advantage-card { animation-delay: 2s; }
+.others-advantage-card-wrapper:nth-child(6) .others-advantage-card { animation-delay: 2.5s; }
+.others-advantage-card-wrapper:nth-child(7) .others-advantage-card { animation-delay: 3s; }
+.others-advantage-card-wrapper:nth-child(8) .others-advantage-card { animation-delay: 3.5s; }
+.others-advantage-card-wrapper:nth-child(9) .others-advantage-card { animation-delay: 4s; }
 
 .others-advantage-img-ctn {
   width: 100%;
@@ -1475,14 +1511,6 @@ section {
 
 .others-advantage-img-ctn:hover {
   scale: 1.05;
-}
-
-.others-advantage-card-wrapper:nth-child(odd) .others-advantage-card > p {
-  transform-origin: left;
-}
-
-.others-advantage-card-wrapper:nth-child(even) .others-advantage-card > p {
-  transform-origin: right;
 }
 
 .others-advantage-card-wrapper:nth-child(1) .others-advantage-img-ctn { animation-delay: 0s; }
@@ -1526,6 +1554,8 @@ section {
   font-size: 20px;
   color: var(--white-1);
   transition: all 0.4s ease-in-out;
+  transform-origin: left;
+  text-align: justify;
 }
 
 .others-advantage-card > p:hover {
@@ -1538,12 +1568,8 @@ section {
               inset 2px -2px 2px #0002;
 }
 
-.others-advantage-card-wrapper:nth-child(odd) .others-advantage-card > p {
+.others-advantage-card-wrapper .others-advantage-card > p {
   border-radius: 0 1000px 1000px 1000px;
-}
-
-.others-advantage-card-wrapper:nth-child(even) .others-advantage-card > p {
-  border-radius: 1000px 0 1000px 1000px;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(1),

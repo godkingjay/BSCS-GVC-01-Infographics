@@ -452,23 +452,23 @@
 @keyframes others-title-shadow {
   0% {
     filter: drop-shadow(-6px 6px #524dc080)
-          drop-shadow(-10px 10px #524dc040);
+            drop-shadow(-10px 10px #524dc040);
   }
   25% {
     filter: drop-shadow(-6px 6px #524dc080)
-          drop-shadow(-10px 10px #524dc040);
+            drop-shadow(-10px 10px #524dc040);
   }
   50% {
     filter: drop-shadow(6px 6px #524dc080)
-          drop-shadow(10px 10px #524dc040);
+            drop-shadow(10px 10px #524dc040);
   }
   75% {
     filter: drop-shadow(6px 6px #524dc080)
-          drop-shadow(10px 10px #524dc040);
+            drop-shadow(10px 10px #524dc040);
   }
   100% {
     filter: drop-shadow(-6px 6px #524dc080)
-          drop-shadow(-10px 10px #524dc040);
+            drop-shadow(-10px 10px #524dc040);
   }
 }
 
@@ -508,5 +508,121 @@
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@keyframes advantage-card-1-shadow {
+  0% {
+    filter: drop-shadow(-6px 6px #524dc080)
+            drop-shadow(-10px 10px #524dc040);
+  }
+  25% {
+    filter: drop-shadow(-6px 6px #524dc080)
+            drop-shadow(-10px 10px #524dc040);
+  }
+  50% {
+    filter: drop-shadow(6px 6px #524dc080)
+            drop-shadow(10px 10px #524dc040);
+  }
+  75% {
+    filter: drop-shadow(6px 6px #524dc080)
+            drop-shadow(10px 10px #524dc040);
+  }
+  100% {
+    filter: drop-shadow(-6px 6px #524dc080)
+            drop-shadow(-10px 10px #524dc040);
+  }
+}
+
+
+@keyframes advantage-card-2-shadow {
+  0% {
+    filter: drop-shadow(-6px 6px #00529960)
+            drop-shadow(-10px 10px #00529940);
+  }
+  25% {
+    filter: drop-shadow(-6px 6px #00529960)
+            drop-shadow(-10px 10px #00529940);
+  }
+  50% {
+    filter: drop-shadow(6px 6px #00529960)
+            drop-shadow(10px 10px #00529940);
+  }
+  75% {
+    filter: drop-shadow(6px 6px #00529960)
+            drop-shadow(10px 10px #00529940);
+  }
+  100% {
+    filter: drop-shadow(-6px 6px #00529960)
+            drop-shadow(-10px 10px #00529940);
+  }
+}
+
+@keyframes advantage-card-3-shadow {
+  0% {
+    filter: drop-shadow(-6px 6px #1b986880)
+            drop-shadow(-10px 10px #1b986840);
+  }
+  25% {
+    filter: drop-shadow(-6px 6px #1b986880)
+            drop-shadow(-10px 10px #1b986840);
+  }
+  50% {
+    filter: drop-shadow(6px 6px #1b986880)
+            drop-shadow(10px 10px #1b986840);
+  }
+  75% {
+    filter: drop-shadow(6px 6px #1b986880)
+            drop-shadow(10px 10px #1b986840);
+  }
+  100% {
+    filter: drop-shadow(-6px 6px #1b986880)
+            drop-shadow(-10px 10px #1b986840);
+  }
+}
+
+@keyframes advantage-card-4-shadow {
+  0% {
+    filter: drop-shadow(-6px 6px #ccaa0060)
+            drop-shadow(-10px 10px #ccaa0030);
+  }
+  25% {
+    filter: drop-shadow(-6px 6px #ccaa0060)
+            drop-shadow(-10px 10px #ccaa0030);
+  }
+  50% {
+    filter: drop-shadow(6px 6px #ccaa0060)
+            drop-shadow(10px 10px #ccaa0030);
+  }
+  75% {
+    filter: drop-shadow(6px 6px #ccaa0060)
+            drop-shadow(10px 10px #ccaa0030);
+  }
+  100% {
+    filter: drop-shadow(-6px 6px #ccaa0060)
+            drop-shadow(-10px 10px #ccaa0030);
+  }
+}
+
+@keyframes advantage-card-5-shadow {
+  0% {
+    filter: drop-shadow(-6px 6px #cc6d0060)
+            drop-shadow(-10px 10px #cc6d0020);
+  }
+  25% {
+    filter: drop-shadow(-6px 6px #cc6d0060)
+            drop-shadow(-10px 10px #cc6d0020);
+  }
+  50% {
+    filter: drop-shadow(6px 6px #cc6d0060)
+            drop-shadow(10px 10px #cc6d0020);
+  }
+  75% {
+    filter: drop-shadow(6px 6px #cc6d0060)
+            drop-shadow(10px 10px #cc6d0020);
+  }
+  100% {
+    filter: drop-shadow(-6px 6px #cc6d0060)
+            drop-shadow(-10px 10px #cc6d0020);
   }
 }
