@@ -1302,7 +1302,7 @@ section {
   width: 100%;
   margin-top: 64px;
   margin-bottom: auto;
-  gap: 32px;
+  gap: 96px;
 }
 
 .others-title-wrapper {
@@ -1415,35 +1415,92 @@ section {
   justify-content: center;
   width: 100%;
   position: relative;
+  background: white;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .others-advantages-ctn {
   width: 100%;
-  max-width: 1080px;
   padding-inline: 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  background: white;
+  gap: 48px;
+}
+
+.others-advantage-card-wrapper {
+  width: 100%;
+  background: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.others-advantage-card-ctn {
+  width: 100%;
+  max-width: 1080px;
+  padding-inline: 32px;
+  background: lightgreen;
 }
 
 .others-advantage-card {
-  background: wheat;
   display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 768px;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  background: lightsalmon;
+}
+
+.others-advantage-card-wrapper:nth-child(4n - 3) .others-advantage-card {
+  margin-right: auto;
+}
+
+.others-advantage-card-wrapper:nth-child(even) .others-advantage-card {
+  margin-inline: auto;
+  flex-direction: row-reverse;
+}
+
+.others-advantage-card-wrapper:nth-child(4n - 1) .others-advantage-card {
+  margin-left: auto;
 }
 
 .others-advantage-img-ctn {
   width: 100%;
-  max-width: 256px;
+  max-width: 128px;
   aspect-ratio: 1;
-  background: lightgoldenrodyellow;
+  translate: 0 -30%;
+}
+
+.others-advantage-img-ctn > span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.others-advantage-img-ctn > span:nth-child(1) {
+  background: wheat;
 }
 
 .others-advantage-card > p {
-  display: inline-block;
+  display: block;
   height: max-content;
+  padding-inline: 24px;
+  padding-block: 12px;
   width: 100%;
   background: lightcoral;
+  box-shadow: inset -4px 4px 4px #fff2,
+              inset 2px -2px 2px #0002;
+}
+
+.others-advantage-card-wrapper:nth-child(odd) .others-advantage-card > p {
+  border-radius: 0 1000px 1000px 1000px;
+}
+
+.others-advantage-card-wrapper:nth-child(even) .others-advantage-card > p {
+  border-radius: 1000px 0 1000px 1000px;
 }
 
 .footer {
