@@ -1445,7 +1445,7 @@ section {
   height: auto;
   width: 100%;
   max-width: 768px;
-  gap: 16px;
+  gap: 32px;
   align-items: center;
   justify-content: center;
 }
@@ -1456,7 +1456,6 @@ section {
 
 .others-advantage-card-wrapper:nth-child(even) .others-advantage-card {
   margin-inline: auto;
-  flex-direction: row-reverse;
 }
 
 .others-advantage-card-wrapper:nth-child(4n - 1) .others-advantage-card {
@@ -1465,7 +1464,7 @@ section {
 
 .others-advantage-img-ctn {
   width: 100%;
-  max-width: 128px;
+  max-width: 160px;
   aspect-ratio: 1;
   translate: 0 -30%;
 }
@@ -1476,13 +1475,30 @@ section {
   width: 100%;
 }
 
+.others-advantage-img-ctn > span:nth-of-type(1) {
+  z-index: 1;
+  top: 50%;
+  height: 40%;
+  border-radius: 50% 50% 1000px 1000px;
+}
+
+.others-advantage-img-ctn > span:nth-of-type(2) {
+  z-index: -1;
+  align-self: 1;
+  background: white;
+  translate: 0 -10%;
+  border-radius: 0 0 40% 40%;
+}
+
 .others-advantage-card > p {
   display: block;
   height: max-content;
-  padding-inline: 24px;
-  padding-block: 12px;
+  padding-inline: 32px;
+  padding-block: 16px;
   width: 100%;
   background: lightcoral;
+  font-size: 20px;
+  color: var(--white-1);
 }
 
 .others-advantage-img-ctn > span:nth-last-of-type(1),
@@ -1491,17 +1507,13 @@ section {
               inset 2px -2px 2px #0002;
 }
 
-.others-advantage-card-wrapper:nth-child(odd) .others-advantage-card > p {
+.others-advantage-card-wrapper .others-advantage-card > p {
   border-radius: 0 1000px 1000px 1000px;
-}
-
-.others-advantage-card-wrapper:nth-child(even) .others-advantage-card > p {
-  border-radius: 1000px 0 1000px 1000px;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(1),
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-card > p {
-  background: var(--clr-1-a);
+  background: var(--clr-1-b);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 3) .others-advantage-img-ctn > span:nth-of-type(1),
@@ -1511,17 +1523,17 @@ section {
 
 .others-advantage-card-wrapper:nth-child(5n - 2) .others-advantage-img-ctn > span:nth-of-type(1),
 .others-advantage-card-wrapper:nth-child(5n - 2) .others-advantage-card > p {
-  background: var(--clr-3-a);
+  background: var(--clr-3-d);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-img-ctn > span:nth-of-type(1),
 .others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-card > p {
-  background: var(--clr-4-a);
+  background: var(--clr-4-d);
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 0) .others-advantage-img-ctn > span:nth-of-type(1),
 .others-advantage-card-wrapper:nth-child(5n - 0) .others-advantage-card > p {
-  background: var(--clr-5-a);
+  background: var(--clr-5-d);
 }
 
 
