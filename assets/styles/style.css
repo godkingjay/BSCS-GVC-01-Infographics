@@ -1541,8 +1541,8 @@ section {
 
 .others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-card,
 .others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-img-ctn > img  {
-  filter: drop-shadow(-6px 6px #ccaa0060)
-          drop-shadow(-10px 10px #ccaa0030);
+  filter: drop-shadow(-6px 6px #ccaa0040)
+          drop-shadow(-10px 10px #ccaa0020);
   animation: advantage-card-4-shadow 2s infinite;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
