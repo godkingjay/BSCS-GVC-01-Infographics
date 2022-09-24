@@ -1498,6 +1498,70 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.others-advantage-card-wrapper > span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 4) > span {
+  background-image: url('../images/others/Meteor(1).svg');
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 3) > span {
+  background-image: url('../images/others/Meteor(2).svg');
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 2) > span {
+  background-image: url('../images/others/Meteor(3).svg');
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 1) > span {
+  background-image: url('../images/others/Meteor(4).svg');
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 0) > span {
+  background-image: url('../images/others/Meteor(5).svg');
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 4) > span {
+  filter: drop-shadow(-6px 6px #524dc080)
+          drop-shadow(-10px 10px #524dc040);
+  animation: advantage-card-1-shadow 2s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 3) > span {
+  filter: drop-shadow(-6px 6px #00529960)
+          drop-shadow(-10px 10px #00529940);
+  animation: advantage-card-2-shadow 2s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 2) > span {
+  filter: drop-shadow(-6px 6px #1b986880)
+          drop-shadow(-10px 10px #1b986840);
+  animation: advantage-card-3-shadow 2s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 1) > span {
+  filter: drop-shadow(-6px 6px #ccaa0040)
+          drop-shadow(-10px 10px #ccaa0020);
+  animation: advantage-card-4-shadow 2s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 0) > span {
+  filter: drop-shadow(-6px 6px #cc6d0060)
+          drop-shadow(-10px 10px #cc6d0320);
+  animation: advantage-card-5-shadow 2s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .others-advantage-card-ctn {
