@@ -60,6 +60,10 @@
   --text-clr: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -1008,8 +1012,8 @@ section {
 }
 
 .industry-card-content-ctn > h2 {
-  display: flex;
   width: max-content;
+  display: flex;
   padding-inline: 32px;
   padding-block: 8px;
   font-size: 24px;
@@ -1025,6 +1029,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .industry-card-content-ctn > ul > li {
@@ -1121,13 +1126,17 @@ section {
 .industry-card-content-ctn > ul > span {
   z-index: 2;
   height: 0;
+  transform-origin: top;
+  transform: scaleY(0);
   opacity: 0;
+  font-size: 16px;
+  line-height: 0;
   margin-top: -4px;
   color: var(--white-1);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
-  font-size: 16px;
   text-align: justify;
+  pointer-events: none;
 }
 
 .industry-card-wrapper:nth-child(odd) .industry-card-content-ctn > ul > span {
@@ -1165,11 +1174,14 @@ section {
 
 .industry-card-wrapper .industry-card-content-ctn > ul > li:hover + span,
 .industry-card-content-ctn > ul > span:hover {
-  opacity: 1;
   height: 100%;
+  opacity: 1;
+  transform: scaleY(1);
+  line-height: normal;
   padding-inline: 16px;
   padding-block: 12px;
   padding-top: 16px;
+  pointer-events: visible;
 }
 
 .industry-card-img-ctn {
