@@ -1008,7 +1008,7 @@ section {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .industry-card-content-ctn > ul > li {
@@ -1103,13 +1103,13 @@ section {
 }
 
 .industry-card-content-ctn > ul > span {
-  z-index: -1;
+  z-index: 2;
   height: 0;
   opacity: 0;
+  margin-top: -8px;
   background: var(--white-1);
   transition: all 0.3s ease-in-out;
-  margin-top: -16px;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px;
   font-size: 16px;
   text-align: justify;
 }
@@ -1120,6 +1120,31 @@ section {
 
 .industry-card-wrapper:nth-child(even) .industry-card-content-ctn > ul > span {
   margin-right: 32px;
+}
+
+.industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-content-ctn > ul > span {
+  background: var(--clr-3-b);
+  filter: drop-shadow(6px 6px #2cd89640) drop-shadow(12px 12px #2cd89620);
+}
+.industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-content-ctn > ul > span {
+  background: var(--clr-4-b);
+  filter: drop-shadow(-6px 6px #ccaa0060) drop-shadow(-12px 12px #ccaa0020);
+}
+.industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-content-ctn > ul > span {
+  background: var(--clr-5-b);
+  filter: drop-shadow(6px 6px #ff880040) drop-shadow(12px 12px #ff880020);
+}
+.industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-content-ctn > ul > span {
+  background: var(--clr-1-b);
+  filter: drop-shadow(-6px 6px #8480ff60) drop-shadow(-12px 12px #8480ff20);
+}
+.industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-content-ctn > ul > span {
+  background: var(--clr-2-b);
+  filter: drop-shadow(6px 6px #2499ff80) drop-shadow(12px 12px #2499ff40);
+}
+.industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-content-ctn > ul > span {
+  background: var(--clr-6-b);
+  filter: drop-shadow(-6px 6px #80808080) drop-shadow(-12px 12px #80808040);
 }
 
 .industry-card-wrapper .industry-card-content-ctn > ul > li:hover + span,
@@ -1583,12 +1608,13 @@ section {
   padding-block: 16px;
   width: 100%;
   background: lightcoral;
-  font-size: 24px;
+  font-size: 30px;
   color: var(--white-1);
   transition: all 0.4s ease-in-out;
   transform-origin: left;
   text-align: justify;
   line-height: 2.5ch;
+  font-weight: bold;
 }
 
 .others-advantage-card > p:hover {

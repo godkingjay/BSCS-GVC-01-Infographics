@@ -148,41 +148,39 @@
   }
 
   .industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-content-ctn > h2,
-  .industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-content-ctn > ul > li {
-    background: var(--clr-3-a);
+  .industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-content-ctn > ul > li,
+  .industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-content-ctn > ul > span {
     filter: drop-shadow(3px 3px #2cd89640) drop-shadow(6px 6px #2cd89620);
   }
 
   .industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-content-ctn > h2,
-  .industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-content-ctn > ul > li {
-    background: var(--clr-4-a);
+  .industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-content-ctn > ul > li,
+  .industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-content-ctn > ul > span {
     filter: drop-shadow(-3px 3px #ccaa0060) drop-shadow(-6px 6px #ccaa0020);
   }
 
   .industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-content-ctn > h2,
-  .industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-content-ctn > ul > li {
-    background: var(--clr-5-a);
+  .industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-content-ctn > ul > li,
+  .industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-content-ctn > ul > span {
     filter: drop-shadow(3px 3px #ff880040) drop-shadow(6px 6px #ff880020);
   }
 
   .industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-content-ctn > h2,
-  .industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-content-ctn > ul > li {
-    background: var(--clr-1-a);
+  .industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-content-ctn > ul > li,
+  .industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-content-ctn > ul > span {
     filter: drop-shadow(-3px 3px #8480ff60) drop-shadow(-6px 6px #8480ff20);
   }
 
   .industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-content-ctn > h2,
-  .industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-content-ctn > ul > li {
-    background: var(--clr-2-a);
+  .industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-content-ctn > ul > li,
+  .industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-content-ctn > ul > span {
     filter: drop-shadow(3px 3px #2499ff80) drop-shadow(6px 6px #2499ff40);
   }
 
   .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-content-ctn > h2,
-  .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-content-ctn > ul > li {
-    background: var(--clr-6-a);
+  .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-content-ctn > ul > li,
+  .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-content-ctn > ul > span {
     filter: drop-shadow(-3px 3px #80808080) drop-shadow(-6px 6px #80808040);
-    box-shadow: inset 4px 4px 4px #fff2,
-                inset -2px -2px 2px #0002;
   }
 
   .others-title-img-ctn {
@@ -190,7 +188,7 @@
   }
 
   .others-advantage-card > p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -236,6 +234,10 @@
     font-size: 48px;
     padding-inline: 48px;
   }
+
+  .others-advantage-card > p {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 656px) {
@@ -271,7 +273,7 @@
   }
 
   .others-advantage-card > p {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
@@ -286,6 +288,10 @@
 
   .industry-list {
     display: flex;
+  }
+
+  .others-advantage-card > p {
+    font-size: 18px;
   }
 }
 
@@ -309,6 +315,10 @@
 
   .others-title > h2 {
     font-size: 30px;
+  }
+
+  .others-advantage-card > p {
+    font-size: 16px;
   }
 }
 
@@ -388,6 +398,10 @@
   .others-title > h2 {
     font-size: 28 px;
   }
+
+  .others-advantage-card > p {
+    padding-inline: 16px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -440,6 +454,10 @@
 
   .color-theme > span {
     width: 36px;
+  }
+
+  .industry-ctn {
+    row-gap: 64px;
   }
 
   .industry-card-img-ctn {
