@@ -147,6 +147,44 @@
     filter: drop-shadow(-4px 4px #80808080) drop-shadow(-8px 8px #80808040);
   }
 
+  .industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-content-ctn > h2,
+  .industry-card-wrapper:nth-child(1) > .industry-card > .industry-card-content-ctn > ul > li {
+    background: var(--clr-3-a);
+    filter: drop-shadow(3px 3px #2cd89640) drop-shadow(6px 6px #2cd89620);
+  }
+
+  .industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-content-ctn > h2,
+  .industry-card-wrapper:nth-child(2) > .industry-card > .industry-card-content-ctn > ul > li {
+    background: var(--clr-4-a);
+    filter: drop-shadow(-3px 3px #ccaa0060) drop-shadow(-6px 6px #ccaa0020);
+  }
+
+  .industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-content-ctn > h2,
+  .industry-card-wrapper:nth-child(3) > .industry-card > .industry-card-content-ctn > ul > li {
+    background: var(--clr-5-a);
+    filter: drop-shadow(3px 3px #ff880040) drop-shadow(6px 6px #ff880020);
+  }
+
+  .industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-content-ctn > h2,
+  .industry-card-wrapper:nth-child(4) > .industry-card > .industry-card-content-ctn > ul > li {
+    background: var(--clr-1-a);
+    filter: drop-shadow(-3px 3px #8480ff60) drop-shadow(-6px 6px #8480ff20);
+  }
+
+  .industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-content-ctn > h2,
+  .industry-card-wrapper:nth-child(5) > .industry-card > .industry-card-content-ctn > ul > li {
+    background: var(--clr-2-a);
+    filter: drop-shadow(3px 3px #2499ff80) drop-shadow(6px 6px #2499ff40);
+  }
+
+  .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-content-ctn > h2,
+  .industry-card-wrapper:nth-child(6) > .industry-card > .industry-card-content-ctn > ul > li {
+    background: var(--clr-6-a);
+    filter: drop-shadow(-3px 3px #80808080) drop-shadow(-6px 6px #80808040);
+    box-shadow: inset 4px 4px 4px #fff2,
+                inset -2px -2px 2px #0002;
+  }
+
   .others-title-img-ctn {
     max-width: 288px;
   }
