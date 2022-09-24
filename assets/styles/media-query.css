@@ -334,6 +334,10 @@
     font-size: 16px;
   }
 
+  .industry-card-content-ctn > ul > span {
+    font-size: 14px;
+  }
+
   .others-title-img-ctn {
     max-width: 256px;
   }
@@ -405,6 +409,11 @@
     margin-inline: auto;
   }
 
+  .industry-card-content-ctn > ul > span {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .industry-card-content-ctn > h2,
   .others-title > h2 {
     font-size: 20px;
@@ -421,6 +430,7 @@
 
   .introduction .content p,
   .industries .content p,
+  .industry-card-content-ctn > ul > span, 
   .others .content p {
     font-size: 12px;
   }
