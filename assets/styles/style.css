@@ -1111,6 +1111,7 @@ section {
   margin-top: -16px;
   border-radius: 0 0 8px 8px;
   font-size: 16px;
+  text-align: justify;
 }
 
 .industry-card-wrapper:nth-child(odd) .industry-card-content-ctn > ul > span {

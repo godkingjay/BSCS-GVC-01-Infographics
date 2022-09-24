@@ -330,12 +330,17 @@
     font-size: 30px;
   }
 
+  .industry-card-content-ctn > ul {
+    gap: 8px;
+  }
+
   .industry-card-content-ctn > ul > li {
     font-size: 16px;
   }
 
   .industry-card-content-ctn > ul > span {
     font-size: 14px;
+    padding-top: 12px;
   }
 
   .others-title-img-ctn {
