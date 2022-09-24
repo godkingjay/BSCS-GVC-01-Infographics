@@ -1707,6 +1707,7 @@ section {
 
 .others-advantage-card-wrapper .others-advantage-card > p {
   border-radius: 0 1000px 1000px 1000px;
+  text-shadow: -3px 3px #0004;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(1),

@@ -293,6 +293,10 @@
   .others-advantage-card > p {
     font-size: 18px;
   }
+
+  .others-advantage-card-wrapper .others-advantage-card > p {
+    text-shadow: -2px 2px #0004;
+  }
 }
 
 @media (max-width: 480px) {
@@ -391,6 +395,10 @@
     padding-top: 12px;
   }
 
+  .others-content {
+    gap: 64px;
+  }
+
   .others-title-img-ctn {
     max-width: 256px;
   }
@@ -410,7 +418,7 @@
   }
 
   .header-content > p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .intro-card-content > p {
@@ -430,6 +438,19 @@
     font-size: 24px;
     word-wrap: break-word;
     white-space: normal;
+  }
+
+  .others-advantage-card > p {
+    padding-block: 8px;
+  }
+
+  .others-advantage-img-ctn {
+    max-width: 96px;
+  }
+
+  .others-advantage-img-ctn > span:nth-of-type(3) {
+    font-size: 20px;
+    text-shadow: -2px 2px #0004;
   }
 }
 
@@ -468,10 +489,15 @@
     min-width: 128px;
   }
 
+  .industry-card-content-ctn > ul {
+    gap: 6px;
+  }
+
   .industry-card-content-ctn > ul > li {
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-inline: auto;
+    padding-block: 4px;
   }
 
   .industry-card-content-ctn > ul > span {
@@ -486,6 +512,19 @@
 }
 
 @media (max-width: 288px) {
+  .header-content > h1 {
+    font-size: 24px;
+  }
+
+  .header-content > p {
+    font-size: 16px;
+  }
+
+  .color-theme > span {
+    width: 100%;
+    max-width: 36px;
+  }
+
   .introduction .content h2,
   .industries .content h2,
   .others .content h2 {
@@ -498,6 +537,21 @@
   .industry-card-content-ctn > ul > span, 
   .others .content p {
     font-size: 12px;
+  }
+
+  .industry-items > li > h2 {
+    font-size: 16px;
+  }
+
+  .others-advantage-card {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .others-advantage-card > p {
+    margin-top: 0;
+    margin-bottom: auto;
+    text-align: center;
   }
 }
 
