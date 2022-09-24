@@ -576,6 +576,10 @@
 }
 
 @media (min-width: 1152px) {
+  .header-content {
+    column-gap: 32px;
+  }
+
   .header-content > .header-logo {
     height: 288px;
   }
@@ -597,10 +601,10 @@
   }
 
   .header-content > h1 {
-    font-size: 64px;
+    font-size: 60px;
   }
   .header-content > p {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .color-theme > span {
@@ -627,11 +631,11 @@
   }
 
   .header-content > h1 {
-    font-size: 72px;
+    font-size: 64px;
   }
 
   .header-content > p {
-    font-size: 56px;
+    font-size: 48px;
   }
 
   .color-theme > span {
@@ -662,11 +666,11 @@
   }
 
   .header-content > h1 {
-    font-size: 80px;
+    font-size: 72px;
   }
 
   .header-content > p {
-    font-size: 64px;
+    font-size: 56px;
   }
 
   .color-theme > span {
