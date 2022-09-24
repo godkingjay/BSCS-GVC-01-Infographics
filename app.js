@@ -41,7 +41,7 @@ window.addEventListener('scroll', function() {
   s2A.forEach((e) => {
     const pos = e.getBoundingClientRect();
 
-    if(pos.top >= 0 && pos.bottom <= window.innerHeight) {
+    if(pos.top >= 0 && pos.bottom/1.25 <= window.innerHeight) {
       e.classList.remove('s2-a');
     }
   });
@@ -51,7 +51,7 @@ window.addEventListener('scroll', function() {
   s2B.forEach((e) => {
     const pos = e.getBoundingClientRect();
 
-    if(pos.top >= 0 && pos.bottom <= window.innerHeight) {
+    if(pos.top >= 0 && pos.bottom/1.25 <= window.innerHeight) {
       e.classList.remove('s2-b');
     }
   });

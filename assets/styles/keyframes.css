@@ -425,6 +425,48 @@
   }
 }
 
+@keyframes industry-circles-bg-1 {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes industry-circles-bg-2 {
+  0% {
+    filter: drop-shadow(-6px 6px #0002) drop-shadow(-12px 12px #0001);
+  }
+  12.5% {
+    filter: drop-shadow(0 8px #0002) drop-shadow(0 16px #0001);
+  }
+  25% {
+    filter: drop-shadow(6px 6px #0002) drop-shadow(12px 12px #0001);
+  }
+  37.5% {
+    filter: drop-shadow(8px 0 #0002) drop-shadow(16px 0 #0001);
+  }
+  50% {
+    filter: drop-shadow(6px -6px #0002) drop-shadow(12px -12px #0001);
+  }
+  62.5% {
+    filter: drop-shadow(0 -8px #0002) drop-shadow(0 -16px #0001);
+  }
+  75% {
+    filter: drop-shadow(-6px -6px #0002) drop-shadow(-12px -12px #0001);
+  }
+  87.5% {
+    filter: drop-shadow(-8px 0 #0002) drop-shadow(-16px 0 #0001);
+  }
+  100% {
+    filter: drop-shadow(-6px 6px #0002) drop-shadow(-12px 12px #0001);
+  }
+}
+
 @keyframes bg-scale-1 {
   0% {
     transform: scale(1.0);

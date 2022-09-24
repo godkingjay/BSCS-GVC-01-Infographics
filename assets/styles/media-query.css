@@ -440,6 +440,10 @@
     padding-inline: 16px;
   }
 
+  .intro-content {
+    grid-gap: 32px;
+  }
+
   .header-logo {
     scale: 0.8;
   }
