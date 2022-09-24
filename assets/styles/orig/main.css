@@ -3362,6 +3362,13 @@ section {
 }
 
 @media (min-width:1440px) {
+  .header {
+    height: 100%;
+    flex: 1;
+    min-height: 864px;
+    max-height: 864px;
+  }
+
   .header-content>.header-logo {
     height: 384px;
   }
@@ -3392,12 +3399,5 @@ section {
 
   .color-theme>span {
     max-width: 72px;
-  }
-
-  .header {
-    height: 100%;
-    flex: 1;
-    min-height: 864px;
-    max-height: 864px;
   }
 }
