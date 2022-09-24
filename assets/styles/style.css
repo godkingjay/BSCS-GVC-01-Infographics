@@ -1847,9 +1847,47 @@ section {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -8px;
   min-height: max-content;
   height: max-content;
   background: var(--dark-1);
+  padding-block: 16px;
+}
+
+.footer-links {
+  min-height: 64px;
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 32px;
+  flex-wrap: wrap;
+  border: var(--dark-1) 10px solid;
+}
+
+.footer-links > a {
+  display: flex;
+  height: 100%;
+  aspect-ratio: 1;
+  /* background: wheat; */
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-links > a:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 4px #fff8);
+}
+
+.footer-links > a > img {
+  width: 100%;
+  min-width: 48px;
+  aspect-ratio: 1;
+  border-radius: 50%;
 }
 
 .content {
