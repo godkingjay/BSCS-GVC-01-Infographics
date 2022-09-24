@@ -1745,6 +1745,26 @@ section {
   opacity: 40%;
 }
 
+.others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > img {
+  background: var(--clr-1-b);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 3) .others-advantage-img-ctn > img {
+  background: var(--clr-2-b);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 2) .others-advantage-img-ctn > img {
+  background: var(--clr-3-b);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 1) .others-advantage-img-ctn > img {
+  background: var(--clr-4-b);
+}
+
+.others-advantage-card-wrapper:nth-child(5n - 0) .others-advantage-img-ctn > img {
+  background: var(--clr-5-b);
+}
+
 .footer {
   min-height: max-content;
   height: max-content;
