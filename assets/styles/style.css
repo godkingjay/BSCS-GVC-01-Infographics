@@ -977,6 +977,7 @@ section {
   position: relative;
   transition: all .75s ease-in-out;
   transition-delay: .125s;
+  position: relative;
 }
 
 .industry-card {
