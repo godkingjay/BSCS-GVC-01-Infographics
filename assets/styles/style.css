@@ -1722,7 +1722,7 @@ section {
   font-family: "Oswald Bold", sans-serif;
   font-size: 30px;
   color: var(--white-1);
-  text-shadow: -4px 4px #0004;
+  text-shadow: -2px 2px #0004;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 4) .others-advantage-img-ctn > span:nth-of-type(3) {
@@ -1874,7 +1874,6 @@ section {
   display: flex;
   height: 100%;
   aspect-ratio: 1;
-  /* background: wheat; */
   transition: all 0.2s ease-in-out;
 }
 
