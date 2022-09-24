@@ -567,6 +567,10 @@ section {
   row-gap: 96px;
 }
 
+.industry-content a {
+  text-decoration: none;
+}
+
 .industry-det-wrapper {
   display: flex;
   align-items: center;

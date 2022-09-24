@@ -12,6 +12,8 @@ Resources:
 
 [Animated Shape Title](https://bgjar.com/)
 
+BJar
+
 [Circles.svg](https://bgjar.com/)
 
 [Circular Primary.svg](https://bgjar.com/)
@@ -22,8 +24,14 @@ Resources:
 
 [global-illustration.png](https://www.pngmart.com/image/120813)
 
+Haikei
+
+IconScout
+
 [layered-waves-haikei.svg](https://app.haikei.app/)
 
 [layered-waves-haikei-2.svg](https://app.haikei.app/)
+
+SVG Repo
 
 [Wave.png](https://bgjar.com/wave)
