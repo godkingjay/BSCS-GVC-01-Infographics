@@ -1,8 +1,9 @@
 :root {
   --clr-1-a: #8480ff;
   --clr-1-b: #a6a3ff;
-  --clr-1-c: #524dc0;
+  --clr-1-c: #534ec1;
   --clr-1-d: #645cff;
+  --clr-1-e: #6763e9;
   --clr-2-a: #2499ff;
   --clr-2-b: #66b8ff;
   --clr-2-c: #0080f0;
@@ -20,6 +21,7 @@
   --clr-5-b: #ffac4d;
   --clr-5-c: #cc6d00;
   --clr-5-d: #e67a00;
+  --clr-5-e: #995200;
   --clr-6-a: #b0b0b0;
   --clr-6-b: #e0e0e0;
   --clr-6-c: #808080;

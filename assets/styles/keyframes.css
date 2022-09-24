@@ -626,3 +626,27 @@
             drop-shadow(-10px 10px #cc6d0020);
   }
 }
+
+@keyframes advantage-card-img-1 {
+  0% {
+    rotate: 0deg;
+  }
+  2.5% {
+    rotate: 5deg;
+  }
+  5% {
+    rotate: -5deg;
+  }
+  7.5% {
+    rotate: 5deg;
+  }
+  10% {
+    rotate: -5deg;
+  }
+  10.5% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}

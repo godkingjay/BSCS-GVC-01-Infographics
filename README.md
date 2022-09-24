@@ -6,4 +6,4 @@
 - [Towards Future Farming: How Artificial Intelligence is transforming the Agriculture Industry](https://www.wipro.com/holmes/towards-future-farming-how-artificial-intelligence-is-transforming-the-agriculture-industry/) - Revanth(wipro)
 - [How A.I. Will Redefine Economics](https://towardsdatascience.com/how-ai-will-redefine-economics-ec305e3cb687#:~:text=AI%2Dpowered%20predictive%20analytics%20will,the%20actual%20state%20of%20affairs.) - Sukhayl Niyazov(Towards Data Science)
 - [Artificial Intelligence and Economic Growth](https://web.stanford.edu/~chadj/AJJ-AIandGrowth.pdf) - Philippe Aghion, Benjamin F. Jones, and Charles I. Jones
-- 
+- [Advantages and Disadvantages of Artificial Intelligence](https://www.simplilearn.com/advantages-and-disadvantages-of-artificial-intelligence-article) - Nikita Duggal(simplilearn)
