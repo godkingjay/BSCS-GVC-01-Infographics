@@ -64,6 +64,22 @@
   .others-title > h2 {
     font-size: 40px;
   }
+
+  .others-advantage-card-wrapper:nth-child(1) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(2) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(5) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(6) .others-advantage-card > p::after {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 896px) {
+  .others-advantage-card-wrapper:nth-child(1) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(2) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(5) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(6) .others-advantage-card > p::after {
+    margin-left: 12%;
+  }
 }
 
 @media (max-width: 864px) {
@@ -84,6 +100,22 @@
 
   .others-title > h2 {
     font-size: 36px;
+  }
+
+  .others-advantage-card-wrapper:nth-child(1) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(2) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(5) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(6) .others-advantage-card > p::after {
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 816px) {
+  .others-advantage-card-wrapper:nth-child(1) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(2) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(5) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(6) .others-advantage-card > p::after {
+    margin-left: 0;
   }
 }
 
@@ -249,7 +281,14 @@
   .industry-circle-wrapper:nth-child(1)>.industry-circle > h2 {
     font-size: 18px;
   }
+
+  .others-advantage-card > p::after {
+    font-size: 18px;
+    padding-block: 6px;
+    padding-inline: 12px;
+  }
 }
+
 @media (max-width: 576px) {
   .industry-title > h2 {
     font-size: 18px;
@@ -274,6 +313,11 @@
 
   .others-advantage-card > p {
     font-size: 24px;
+  }
+
+  .others-advantage-card > p::after {
+    font-size: 16px;
+    padding-inline: 10px;
   }
 
   .footer-links {
@@ -334,6 +378,13 @@
 
   .others-advantage-card > p {
     font-size: 16px;
+  }
+
+  .others-advantage-card > p::after {
+    font-size: 14px;
+    padding-block: 4px;
+    padding-inline: 8px;
+    translate: 0 calc(100% + 4px);
   }
 }
 
@@ -448,6 +499,10 @@
 
   .others-advantage-card > p {
     padding-block: 8px;
+  }
+
+  .others-advantage-card > p::after {
+    font-size: 12px;
   }
 
   .others-advantage-img-ctn {
@@ -566,6 +621,14 @@
     margin-bottom: auto;
     text-align: center;
   }
+
+  .others-advantage-card > p:hover {
+    margin-bottom: 64px;
+  }
+
+  .others-advantage-card-wrapper:nth-child(9) .others-advantage-card > p:hover {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 977px) {
@@ -579,6 +642,13 @@
     grid-template-areas:
         "i"
         "c";
+  }
+
+  .others-advantage-card-wrapper:nth-child(1) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(2) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(5) .others-advantage-card > p::after,
+  .others-advantage-card-wrapper:nth-child(6) .others-advantage-card > p::after {
+    margin-left: 30%;
   }
 }
 

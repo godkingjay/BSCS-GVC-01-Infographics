@@ -1433,6 +1433,7 @@ section {
 }
 
 .others-advantage-card-wrapper>span {
+  z-index: -100;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1554,6 +1555,7 @@ section {
 }
 
 .others-advantage-img-ctn {
+  z-index: 1;
   width: 100%;
   max-width: 160px;
   aspect-ratio: 1;
@@ -1614,8 +1616,7 @@ section {
 
 .footer, .others-advantage-card>p {
   height: max-content;
-  padding-block: 16px;
-  width: 100%
+  padding-block: 16px
 }
 
 .others-advantage-img-ctn>img:hover {
@@ -1659,8 +1660,10 @@ section {
 }
 
 .others-advantage-card>p {
+  z-index: 5;
   display: block;
   padding-inline: 32px;
+  width: 100%;
   background: #f08080;
   font-size: 30px;
   color: var(--white-1);
@@ -1672,12 +1675,42 @@ section {
 }
 
 .others-advantage-card>p:hover {
-  transform: scale(1.0375)
+  transform: scale(1.0375);
+  filter: drop-shadow(0 0 4px #fff3)
 }
 
 .others-advantage-card-wrapper .others-advantage-card>p {
   border-radius: 0 1000px 1000px;
   text-shadow: -3px 3px #0004
+}
+
+.others-advantage-card>p::after {
+  z-index: 100;
+  position: absolute;
+  height: 0;
+  line-height: 0;
+  font-size: 20px;
+  width: 100%;
+  padding-inline: 16px;
+  padding-block: 8px;
+  background: inherit;
+  bottom: 0;
+  left: 0;
+  display: none;
+  font-weight: 400;
+  translate: 0 110%;
+  transform-origin: top;
+  transform: scaleY(0);
+  text-shadow: none;
+  box-shadow: inherit;
+  border-radius: 8px
+}
+
+.others-advantage-card>p:hover::after {
+  display: block;
+  line-height: normal;
+  height: max-content;
+  transform: scaleY(1)
 }
 
 .others-advantage-card-wrapper:nth-child(5n-4) .others-advantage-card>p, .others-advantage-card-wrapper:nth-child(5n-4) .others-advantage-img-ctn>span:first-of-type {
@@ -1745,10 +1778,47 @@ section {
   background: var(--clr-5-b)
 }
 
+.others-advantage-card-wrapper:first-child .others-advantage-card>p::after {
+  content: 'Artificial intelligence has the potential to drastically reduce errors while increasing accuracy and precision.'
+}
+
+.others-advantage-card-wrapper:nth-child(2) .others-advantage-card>p::after {
+  content: 'Another big advantage of AI is that people can avoid many risks by handing dangerous work to AI robots.'
+}
+
+.others-advantage-card-wrapper:nth-child(3) .others-advantage-card>p::after {
+  content: 'AI can work indefinitely with no breaks. They think much faster than humans and can complete numerous jobs at once with high accuracy.'
+}
+
+.others-advantage-card-wrapper:nth-child(4) .others-advantage-card>p::after {
+  content: 'AI can be integrated into chatbots or voice bots to automatically respond to questions or requests.'
+}
+
+.others-advantage-card-wrapper:nth-child(5) .others-advantage-card>p::after {
+  content: 'Use of AI to efficiently automate tedious chores for people, allowing them to focus on being more creative.'
+}
+
+.others-advantage-card-wrapper:nth-child(6) .others-advantage-card>p::after {
+  content: 'One significant advantage of Artificial Intelligence is that it is free of bias, resulting in more accurate decision-making.'
+}
+
+.others-advantage-card-wrapper:nth-child(7) .others-advantage-card>p::after {
+  content: 'We may also utilize AI-based approaches to predict today\'s weather and the days ahead, as well as discover the best routes to our destination.'
+}
+
+.others-advantage-card-wrapper:nth-child(8) .others-advantage-card>p::after {
+  content: 'AI is the driving force behind various developments that will help humans solve the majority of difficult problems.'
+}
+
+.others-advantage-card-wrapper:nth-child(9) .others-advantage-card>p::after {
+  content: 'It can be used efficiently in any natural or man-made disaster, such as travelling to Mars, defusing a bomb, exploring the deepest sections of the oceans, or mining for coal and oil.'
+}
+
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   margin-top: -8px;
   min-height: max-content;
   background: var(--dark-1)
@@ -2296,6 +2366,16 @@ section {
   .others-title>h2 {
     font-size: 40px
   }
+
+  .others-advantage-card-wrapper:first-child .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(2) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(5) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(6) .others-advantage-card>p::after {
+    margin-left: 20%
+  }
+}
+
+@media (max-width:896px) {
+  .others-advantage-card-wrapper:first-child .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(2) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(5) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(6) .others-advantage-card>p::after {
+    margin-left: 12%
+  }
 }
 
 @media (max-width:864px) {
@@ -2313,6 +2393,16 @@ section {
 
   .others-title>h2 {
     font-size: 36px
+  }
+
+  .others-advantage-card-wrapper:first-child .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(2) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(5) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(6) .others-advantage-card>p::after {
+    margin-left: 8%
+  }
+}
+
+@media (max-width:816px) {
+  .others-advantage-card-wrapper:first-child .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(2) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(5) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(6) .others-advantage-card>p::after {
+    margin-left: 0
   }
 }
 
@@ -2455,6 +2545,12 @@ section {
   .industry-circle-wrapper:first-child>.industry-circle>h2 {
     font-size: 18px
   }
+
+  .others-advantage-card>p::after {
+    font-size: 18px;
+    padding-block: 6px;
+    padding-inline: 12px
+  }
 }
 
 @media (max-width:576px) {
@@ -2476,6 +2572,11 @@ section {
 
   .others-advantage-card>p {
     font-size: 24px
+  }
+
+  .others-advantage-card>p::after {
+    font-size: 16px;
+    padding-inline: 10px
   }
 
   .footer-links {
@@ -2536,6 +2637,13 @@ section {
 
   .others-advantage-card>p {
     font-size: 16px
+  }
+
+  .others-advantage-card>p::after {
+    font-size: 14px;
+    padding-block: 4px;
+    padding-inline: 8px;
+    translate: 0 calc(100% + 4px)
   }
 }
 
@@ -2646,6 +2754,10 @@ section {
     padding-block: 8px
   }
 
+  .others-advantage-card>p::after {
+    font-size: 12px
+  }
+
   .others-advantage-img-ctn {
     max-width: 96px
   }
@@ -2748,11 +2860,23 @@ section {
     margin-bottom: auto;
     text-align: center
   }
+
+  .others-advantage-card>p:hover {
+    margin-bottom: 64px
+  }
+
+  .others-advantage-card-wrapper:nth-child(9) .others-advantage-card>p:hover {
+    margin-bottom: 0
+  }
 }
 
 @media (min-width:977px) {
   .intro-about-ctn, .intro-role-ctn {
     grid-template-areas: "i""c"
+  }
+
+  .others-advantage-card-wrapper:first-child .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(2) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(5) .others-advantage-card>p::after, .others-advantage-card-wrapper:nth-child(6) .others-advantage-card>p::after {
+    margin-left: 30%
   }
 }
 
