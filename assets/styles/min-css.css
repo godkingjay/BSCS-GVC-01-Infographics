@@ -28,6 +28,10 @@ body, main, main section {
   text-transform: uppercase
 }
 
+.industry-content a, .industry-items>li>a {
+  text-decoration: none
+}
+
 .header-content>h1, .header-content>p, .others-title>h2, h1, h2 {
   text-transform: uppercase
 }
@@ -467,11 +471,6 @@ section {
   border-radius: 8px
 }
 
-.industry-circle>h2, .industry-list>h2, .industry-title>h2 {
-  text-align: center;
-  color: var(--white-1)
-}
-
 .intro-about-ctn>.intro-card-content>p {
   background: #2499ff40;
   box-shadow: -16px 16px #0080f040, -32px 32px #0080f020;
@@ -544,10 +543,6 @@ section {
 
 .industry-card, .others-advantage-card-wrapper:nth-child(2n) .others-advantage-card {
   margin-inline: auto
-}
-
-.industry-content a {
-  text-decoration: none
 }
 
 .industry-det-wrapper {
@@ -626,6 +621,8 @@ section {
 }
 
 .industry-title>h2 {
+  color: var(--white-1);
+  text-align: center;
   text-shadow: -4px 4px #fff1
 }
 
@@ -736,7 +733,9 @@ section {
 
 .industry-circle>h2 {
   font-weight: 400;
+  text-align: center;
   width: 100%;
+  color: var(--white-1);
   text-shadow: -2px 2px var(--white-6);
   font-size: 24px
 }
@@ -803,6 +802,8 @@ section {
 
 .industry-list>h2 {
   background: var(--brown-1);
+  text-align: center;
+  color: var(--white-1);
   padding-block: 8px;
   padding-inline: 16px;
   border-radius: 8px;
@@ -820,6 +821,10 @@ section {
 .industry-card-content-ctn>h2, .industry-card-content-ctn>ul>li {
   padding-block: 8px;
   box-shadow: inset 4px 4px 4px #fff4, inset -2px -2px 2px #0002
+}
+
+.industry-items>li>a {
+  color: var(--white-1)
 }
 
 .industry-items {

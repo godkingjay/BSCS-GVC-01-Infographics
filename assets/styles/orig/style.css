@@ -881,6 +881,11 @@ section {
   transform: scale(1.05);
 }
 
+.industry-items > li > a {
+  color: var(--white-1);
+  text-decoration: none;
+}
+
 .industry-items {
   list-style: none;
   display: flex;
