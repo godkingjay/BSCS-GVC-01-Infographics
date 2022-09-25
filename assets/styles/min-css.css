@@ -1048,7 +1048,7 @@ section {
   height: 0;
   line-height: 0;
   visibility: hidden;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -2px;
   color: var(--white-1);
   border-radius: 8px;
@@ -1065,27 +1065,27 @@ section {
 }
 
 .industry-card-wrapper:first-child>.industry-card>.industry-card-content-ctn>ul>span {
-  background: var(--clr-3-b);
+  background: var(--clr-3-a);
   filter: drop-shadow(6px 6px #2cd89640) drop-shadow(12px 12px #2cd89620)
 }
 
 .industry-card-wrapper:nth-child(2)>.industry-card>.industry-card-content-ctn>ul>span {
-  background: var(--clr-4-b);
+  background: var(--clr-4-a);
   filter: drop-shadow(-6px 6px #ccaa0060) drop-shadow(-12px 12px #ccaa0020)
 }
 
 .industry-card-wrapper:nth-child(3)>.industry-card>.industry-card-content-ctn>ul>span {
-  background: var(--clr-5-b);
+  background: var(--clr-5-a);
   filter: drop-shadow(6px 6px #ff880040) drop-shadow(12px 12px #ff880020)
 }
 
 .industry-card-wrapper:nth-child(4)>.industry-card>.industry-card-content-ctn>ul>span {
-  background: var(--clr-1-b);
+  background: var(--clr-1-a);
   filter: drop-shadow(-6px 6px #8480ff60) drop-shadow(-12px 12px #8480ff20)
 }
 
 .industry-card-wrapper:nth-child(5)>.industry-card>.industry-card-content-ctn>ul>span {
-  background: var(--clr-2-b);
+  background: var(--clr-2-a);
   filter: drop-shadow(6px 6px #2499ff80) drop-shadow(12px 12px #2499ff40)
 }
 
