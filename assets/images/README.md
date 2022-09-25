@@ -12,7 +12,7 @@ Resources:
 
 [Animated Shape Title](https://bgjar.com/)
 
-BJar
+[BJar](https://bgjar.com/)
 
 [Circles.svg](https://bgjar.com/)
 
@@ -24,14 +24,14 @@ BJar
 
 [global-illustration.png](https://www.pngmart.com/image/120813)
 
-Haikei
+[Haikei](https://haikei.app/)
 
-IconScout
+[IconScout](https://iconscout.com/)
 
 [layered-waves-haikei.svg](https://app.haikei.app/)
 
 [layered-waves-haikei-2.svg](https://app.haikei.app/)
 
-SVG Repo
+[SVG Repo](https://www.svgrepo.com/)
 
 [Wave.png](https://bgjar.com/wave)

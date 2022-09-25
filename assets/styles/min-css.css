@@ -113,6 +113,11 @@ main {
   flex-direction: column
 }
 
+a, a:click, a:hover, a:visited {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent
+}
+
 main section {
   min-height: 864px
 }
@@ -958,7 +963,7 @@ section {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   width: 100%
 }
 
@@ -1036,14 +1041,11 @@ section {
 .industry-card-content-ctn>ul>span {
   z-index: 2;
   height: 0;
-  transform-origin: top;
-  transform: scaleY(0);
-  opacity: 0;
-  font-size: 16px;
   line-height: 0;
+  visibility: hidden;
+  font-size: 16px;
   margin-top: -4px;
   color: var(--white-1);
-  transition: .3s ease-in-out;
   border-radius: 8px;
   text-align: justify;
   pointer-events: none
@@ -1088,13 +1090,12 @@ section {
 }
 
 .industry-card-content-ctn>ul>span:hover, .industry-card-wrapper .industry-card-content-ctn>ul>li:hover+span {
+  visibility: visible;
   height: 100%;
-  opacity: 1;
-  transform: scaleY(1);
+  height: max-content;
   line-height: normal;
   padding-inline: 16px;
   padding-block: 12px;
-  padding-top: 16px;
   pointer-events: visible
 }
 
@@ -1437,32 +1438,27 @@ section {
 
 .others-advantage-card-wrapper:nth-child(5n-4)>span {
   background-image: url('../images/others/Meteor(1).svg');
-  filter: drop-shadow(-6px 6px #524dc080) drop-shadow(-10px 10px #524dc040);
-  animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite advantage-card-1-shadow, 6s linear infinite bg-scale-1
+  filter: drop-shadow(-6px 6px #524dc080) drop-shadow(-10px 10px #524dc040)
 }
 
 .others-advantage-card-wrapper:nth-child(5n-3)>span {
   background-image: url('../images/others/Meteor(2).svg');
-  filter: drop-shadow(-6px 6px #00529960) drop-shadow(-10px 10px #00529940);
-  animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite advantage-card-2-shadow, 6s linear infinite bg-scale-1
+  filter: drop-shadow(-6px 6px #00529960) drop-shadow(-10px 10px #00529940)
 }
 
 .others-advantage-card-wrapper:nth-child(5n-2)>span {
   background-image: url('../images/others/Meteor(3).svg');
-  filter: drop-shadow(-6px 6px #1b986880) drop-shadow(-10px 10px #1b986840);
-  animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite advantage-card-3-shadow, 6s linear infinite bg-scale-1
+  filter: drop-shadow(-6px 6px #1b986880) drop-shadow(-10px 10px #1b986840)
 }
 
 .others-advantage-card-wrapper:nth-child(5n-1)>span {
   background-image: url('../images/others/Meteor(4).svg');
-  filter: drop-shadow(-6px 6px #ccaa0040) drop-shadow(-10px 10px #ccaa0020);
-  animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite advantage-card-4-shadow, 6s linear infinite bg-scale-1
+  filter: drop-shadow(-6px 6px #ccaa0040) drop-shadow(-10px 10px #ccaa0020)
 }
 
 .others-advantage-card-wrapper:nth-child(5n-0)>span {
   background-image: url('../images/others/Meteor(5).svg');
-  filter: drop-shadow(-6px 6px #cc6d0060) drop-shadow(-10px 10px #cc6d0320);
-  animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite advantage-card-5-shadow, 6s linear infinite bg-scale-1
+  filter: drop-shadow(-6px 6px #cc6d0060) drop-shadow(-10px 10px #cc6d0320)
 }
 
 .others-advantage-card-ctn {
@@ -1760,9 +1756,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-area: 32px;
   flex-wrap: wrap;
-  border: var(--dark-1) 10px solid
+  border: var(--dark-1) 10px solid;
+  gap: 24px
 }
 
 .footer-links>a {
@@ -2476,6 +2472,17 @@ section {
   .others-advantage-card>p {
     font-size: 24px
   }
+
+  .footer-links {
+    gap: 20px
+  }
+
+  .footer-links>a>img {
+    width: 100%;
+    min-width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%
+  }
 }
 
 @media (max-width:512px) {
@@ -2577,17 +2584,12 @@ section {
     justify-content: center
   }
 
-  .industry-card-content-ctn>ul {
-    gap: 8px
-  }
-
   .industry-card-content-ctn>ul>li {
     font-size: 16px
   }
 
   .industry-card-content-ctn>ul>span {
-    font-size: 14px;
-    padding-top: 12px
+    font-size: 14px
   }
 
   .others-content {
@@ -2646,6 +2648,13 @@ section {
   .others-advantage-img-ctn>span:nth-of-type(3) {
     font-size: 20px;
     text-shadow: -2px 2px #0004
+  }
+
+  .footer-links>a>img {
+    width: 100%;
+    min-width: 32px;
+    aspect-ratio: 1;
+    border-radius: 50%
   }
 }
 
@@ -2819,6 +2828,13 @@ section {
 }
 
 @media (min-width:1440px) {
+  .header {
+    height: 100%;
+    flex: 1;
+    min-height: 864px;
+    max-height: 864px
+  }
+
   .header-content>.header-logo {
     height: 384px
   }
@@ -2849,12 +2865,5 @@ section {
 
   .color-theme>span {
     max-width: 72px
-  }
-
-  .header {
-    height: 100%;
-    flex: 1;
-    min-height: 864px;
-    max-height: 864px
   }
 }

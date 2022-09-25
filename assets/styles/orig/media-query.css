@@ -275,6 +275,17 @@
   .others-advantage-card > p {
     font-size: 24px;
   }
+
+  .footer-links {
+    gap: 20px;
+  }
+
+  .footer-links > a > img {
+    width: 100%;
+    min-width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
 }
 
 @media (max-width: 512px) {
@@ -382,17 +393,12 @@
     font-size: 30px;
   }
 
-  .industry-card-content-ctn > ul {
-    gap: 8px;
-  }
-
   .industry-card-content-ctn > ul > li {
     font-size: 16px;
   }
 
   .industry-card-content-ctn > ul > span {
     font-size: 14px;
-    padding-top: 12px;
   }
 
   .others-content {
@@ -451,6 +457,13 @@
   .others-advantage-img-ctn > span:nth-of-type(3) {
     font-size: 20px;
     text-shadow: -2px 2px #0004;
+  }
+
+  .footer-links > a > img {
+    width: 100%;
+    min-width: 32px;
+    aspect-ratio: 1;
+    border-radius: 50%;
   }
 }
 
@@ -645,6 +658,13 @@
 }
 
 @media (min-width:1440px) {
+  .header {
+    height: 100%;
+    flex: 1;
+    min-height: 864px;
+    max-height: 864px;
+  }
+
   .header-content > .header-logo {
     height: 384px;
   }
@@ -675,12 +695,5 @@
 
   .color-theme > span {
     max-width: 72px;
-  }
-
-  .header {
-    height: 100%;
-    flex: 1;
-    min-height: 864px;
-    max-height: 864px;
   }
 }

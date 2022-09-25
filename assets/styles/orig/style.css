@@ -92,6 +92,11 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+a, a:hover, a:click, a:visited {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+} 
+
 main section {
   display: grid;
   min-height: 864px;
@@ -1032,7 +1037,7 @@ section {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   width: 100%;
 }
 
@@ -1130,14 +1135,11 @@ section {
 .industry-card-content-ctn > ul > span {
   z-index: 2;
   height: 0;
-  transform-origin: top;
-  transform: scaleY(0);
-  opacity: 0;
-  font-size: 16px;
   line-height: 0;
+  visibility: hidden;
+  font-size: 16px;
   margin-top: -4px;
   color: var(--white-1);
-  transition: all 0.3s ease-in-out;
   border-radius: 8px;
   text-align: justify;
   pointer-events: none;
@@ -1178,13 +1180,12 @@ section {
 
 .industry-card-wrapper .industry-card-content-ctn > ul > li:hover + span,
 .industry-card-content-ctn > ul > span:hover {
+  visibility: visible;
   height: 100%;
-  opacity: 1;
-  transform: scaleY(1);
+  height: max-content;
   line-height: normal;
   padding-inline: 16px;
   padding-block: 12px;
-  padding-top: 16px;
   pointer-events: visible;
 }
 
@@ -1549,36 +1550,26 @@ section {
 .others-advantage-card-wrapper:nth-child(5n - 4) > span {
   filter: drop-shadow(-6px 6px #524dc080)
           drop-shadow(-10px 10px #524dc040);
-  animation: advantage-card-1-shadow 2s infinite, bg-scale-1 6s infinite;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), linear;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 3) > span {
   filter: drop-shadow(-6px 6px #00529960)
           drop-shadow(-10px 10px #00529940);
-  animation: advantage-card-2-shadow 2s infinite, bg-scale-1 6s infinite;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), linear;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 2) > span {
   filter: drop-shadow(-6px 6px #1b986880)
           drop-shadow(-10px 10px #1b986840);
-  animation: advantage-card-3-shadow 2s infinite, bg-scale-1 6s infinite;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), linear;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 1) > span {
   filter: drop-shadow(-6px 6px #ccaa0040)
           drop-shadow(-10px 10px #ccaa0020);
-  animation: advantage-card-4-shadow 2s infinite, bg-scale-1 6s infinite;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), linear;
 }
 
 .others-advantage-card-wrapper:nth-child(5n - 0) > span {
   filter: drop-shadow(-6px 6px #cc6d0060)
           drop-shadow(-10px 10px #cc6d0320);
-  animation: advantage-card-5-shadow 2s infinite, bg-scale-1 6s infinite;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), linear;
 }
 
 .others-advantage-card-ctn {
@@ -1881,9 +1872,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-area: 32px;
   flex-wrap: wrap;
   border: var(--dark-1) 10px solid;
+  gap: 24px;
 }
 
 .footer-links > a {
